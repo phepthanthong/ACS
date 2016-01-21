@@ -1,0 +1,20 @@
+1. Doctype indique la version de la grammaire HTML à utiliser
+
+2. Il y a un en-tête (balise Head) et un corps (balise Body); 
+le corps a deux balises Div, la première pour le titre de l'enseignement,
+la deuxième pour le contenu proprement dit,
+qui comporte une liste (balise Ul) de deux éléments (balise Li).
+
+3. Les deux balises Link dont l'attribut Rel vaut "stylesheet".
+
+4. Les attributs Href de ces deux balises indiquent où sont ces feuilles de styles,
+elles sont fournies par le serveur Http de la licence.
+
+5. A préciser l'encodage du texte, notamment les lettres accentuées.
+
+6. Les occurrences sont &amp; &gt et &nbsp;
+qui servent à afficher respectivement "&" ">" et " ". 
+Les deux premiers sont des caractères réservés de XHTML
+et doivent donc être transcodés quand on veut les afficher.
+Le troisième est un espace dont on précise qu'il est insécable
+(pas remplaçable par un saut de ligne).

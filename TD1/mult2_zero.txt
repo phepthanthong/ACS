@@ -1,0 +1,18 @@
+#!/bin/sh 
+echo 'Content-Type: text/html; charset=utf-8'
+echo
+echo '<html><head>'
+echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />'
+echo '<title>Tables de multiplication par 2</title>'
+echo '</head><body>' 
+echo '<table>'
+echo '<caption>Table de multiplication par 2 sur 2 colonnes</caption>'
+echo '<tr><th>x</th><th>2x</th></tr>'
+echo "<tr><td  style='text-align:center' colspan='2'>0</td></tr>" 
+i=1
+while [ $i -lt 10 ]
+do
+echo "<tr><td>$i</td><td>" $(($i*2)) "</td></tr>" 
+i=$((i+1))
+done
+echo '</table></body></html>'

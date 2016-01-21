@@ -1,0 +1,14 @@
+#!/bin/sh 
+cat <<EOF
+Content-Type: text/html; charset=utf-8
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> Afficher les informations connues du serveur</title>
+</head>
+<body><div>
+EOF
+echo "Je suis le script <a href='www.apache.org/SCRIPT_NAME'>$SCRIPT_NAME</a>"
+echo "servi par <a href='www.apache.org/SERVER_SOFTWARE'>$SERVER_SOFTWARE</a>"
+echo "pour <a href='www.apache.org/HTTP_USER_AGENT'>$HTTP_USER_AGENT</a>".
+echo "</div></body></html>

@@ -1,0 +1,23 @@
+#!/bin/sh 
+echo 'Content-Type: text/html; charset=utf-8'
+echo
+echo '<html><head>'
+echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />'
+echo '<title>Tables de multiplication par 2</title>'
+echo '</head><body>' 
+echo '<table>'
+echo '<caption>Table de multiplication par 2 sur 2 colonnes</caption>'
+echo '<tr><th>x</th><th>2x</th></tr>'
+i=0
+while [ $i -lt 10 ]
+do
+if [ $((i % 2)) -eq 0 ]
+then
+color='#777'
+else
+color='#111'
+fi
+echo "<tr style='background-color:$color'><td>$i</td><td>" $(($i*2)) "</td></tr>" 
+i=$((i+1))
+done
+echo '</table></body></html>'

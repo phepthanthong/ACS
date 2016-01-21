@@ -1,0 +1,33 @@
+#!/bin/sh 
+echo 'Content-Type: text/html; charset=utf-8'
+echo
+echo '<html><head>'
+echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />'
+echo '<title>Tables de multiplication par 2 sur 10 lignes</title>'
+echo '</head><body>' 
+echo '<table>'
+echo '<caption>Table de multiplication par 2 sur 10 colonnes</caption>'
+
+# Ligne 1
+echo "<tr>"
+# si on veut  nommer la ligne faire: echo "<th>x</th>"
+echo "<td rowspan='2'>" 0 "</td>"
+i=1
+while [ $i -lt 10 ]
+do
+echo "<td>" $i "</td>"
+i=$((i+1))
+done
+echo "</tr>"
+
+# Ligne 2
+echo "<tr>"
+# si on veut  nommer la ligne faire: echo "<th>2x</th>"
+i=1
+while [ $i -lt 10 ]
+do
+echo "<td>" $((2*$i)) "</td>"
+i=$((i+1))
+done
+echo "</tr>"
+echo '</table></body></html>'
