@@ -1,0 +1,1 @@
+Lorsqu'on ouvre le terminal et execute telnet sans argument, la commande permet de faire telnet machine port est: open localhost 80

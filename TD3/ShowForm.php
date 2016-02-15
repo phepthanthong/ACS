@@ -1,8 +1,8 @@
 <?php
 // La fonction demandee est presque "tableau_en_table"
 // sauf qu'il faut neutraliser les caracteres speciaux des saisies.
-
-require('../../TD/2/array_to.php');
+error_reporting(E_ALL);
+include("../TME2/array_to.php");
 
 function saisies_en_table($t, $legende)
 {
@@ -17,11 +17,11 @@ function saisies_en_table($t, $legende)
   return tableau_en_table($r, $legende);
 }
 
-/* // Test
- require('../../TM/2/entete.php');
- echo entete('ShowForm'), '<body>';
- $caption = '<strong>$_GET</strong> : ' . htmlspecialchars($_SERVER['QUERY_STRING']);
+ // Test
+ include('../TME2/entete.php');
+ echo entete("ShowForm"), "<body>";
+ $caption = '<strong>gjhjhcj</strong> : ' . htmlspecialchars($_SERVER['QUERY_STRING']);
  echo saisies_en_table($_GET, $caption);
- echo '</body></html>';
-/* */
+ echo "</body></html>";
+
 ?>

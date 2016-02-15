@@ -1,0 +1,2 @@
+On va sauvegarder cette page HTML sous un autre nom, puis ouvrir ce fichier et enlever la balise input type hidden.
+On va utiliser ce fichier pour naviguer le catalogue.

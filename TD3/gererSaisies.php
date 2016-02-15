@@ -1,6 +1,6 @@
 <?php
 error_reporting(E_ALL);
-require_once("../../TM/2/entete.php");
+//require("../TME2/entete.php");
 require('ShowForm.php');
 require('controleSaisies.php');
 
@@ -39,10 +39,10 @@ if (($mail===True) AND ($num===True)) {
 }
 echo entete($title), "<body><h1>$title</h1>\n", $body, "</body></html>\n";
 
-// test
-// $t = array('Ju-Ma.X2@foo.bar', '"c\'est moi" <Ju-Ma.X2@foo.bar>', '<i>@foo.bar');
-// echo $t[0], ' ', securiser_saisie($t, 0, RE_MAIL_ETENDU), "\n";
-// echo $t[1], ' ', securiser_saisie($t, 1, RE_MAIL_ETENDU), "\n";
-// echo $t[2], ' ', securiser_saisie($t, 2, RE_MAIL_ETENDU), "\n";
+//test
+$t = array('Ju-Ma.X2@foo.bar', '"c\'est moi" <Ju-Ma.X2@foo.bar>', '<i>@foo.bar');
+echo $t[0], ' ', saisie_fiable($t, 0, RE_MAIL_ETENDU), "\n";
+echo $t[1], ' ', saisie_fiable($t, 1, RE_MAIL_ETENDU), "\n";
+echo $t[2], ' ', saisie_fiable($t, 2, RE_MAIL_ETENDU), "\n";
 ?>
 

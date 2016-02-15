@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" 
+        "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Créneau dans ICS</title>
+  </head> 
+  <body onload="init_ics()">
+    <h1>Créneau dans ICS</h1>
+    <form action="" method="post" enctype="multipart/form-data"
+	  onsubmit='return controleFormICS(this)'>
+      <fieldset>
+	<label for='jour'>Jour </label>
+	<input name='jour' id='jour' onblur='controleJour(this)' onfocus='focusInterdit()' />
+	<label for='debut'>Commencement </label>
+	<input name='debut' id='debut' onblur='controleHeure(this)' onfocus='focusInterdit()' />
+	<label for='fin'>Fin </label>
+	<input name='fin' id='fin' onblur='controleHeure(this)' onfocus='focusInterdit()' />
+      </fieldset>
+      <fieldset>
+	<label for='ICS'>Agenda </label>
+	<input type='file' name='ICS' id='ICS' onchange='controleICS(this)' onfocus='focusInterdit()' />
+	<input type='submit' value='Demander ce rendez-vous' />
+    </fieldset>
+    </form> 
+  <script type='application/javascript' src='date_ics.js'></script> 
+  <script type='application/javascript' src='re_ics.js'></script> 
+  <script type='application/javascript' src='denonce_ics.js'></script> 
+  <script type='application/javascript' src='soumission_ics.js'></script> 
+  <script type='application/javascript' src='creneau_ics.js'></script> 
+  </body> 
+</html>

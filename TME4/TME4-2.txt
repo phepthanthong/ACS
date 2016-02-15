@@ -1,0 +1,9 @@
+- le type de document renvoye est une page html
+- il faut donner comme URL au navigateur: localhost ou 127.0.0.1
+
+- le code de retour envoye par le server lorsqu'on envoie la requete GET /~login HTTP/1.0 est: 302 Found. Cela signifie une redirection indiquee dans l'entete Location.
+
+- le document alors renvoye avec GET /~login HTTP/1.1 Host: 127.0.0.1 est aussi une page HTML.
+- Si on donne au navigateur http://localhost/~login comme URL, il va renvoyer la meme page HTML.
+
+- la difference entre le fichier telnet.html et celui enregistre sous un autre nom c'est que telnet.html enregistre les sorties sur le terminal de la commande telnet; tandis que l'autre enregistre la page HTML redirige par la commande telnet. 

@@ -1,0 +1,23 @@
+Page utilise: nguyentandung.org
+1. 
+- on utilise le menu Information
+- il y a 7 entetes
+- la duree est indiquee dans l'entete renvoye: Connection: keep-alive. 
+
+2. 
+- on utilise le menu Cookies -> View Cookie Information
+
+3.
+- il y a 225 liens hyper-textuels
+- la plupart est fonde sur http
+- ils servent a rediger le client vers un autre site
+
+4.
+- il y a 2 formulaires
+
+5.
+- il y a 8 feuilles de styles references dans cette page
+
+6. Outil de validation, nottament du source HTML, permet de valider si cette page respecte les normes du W3C.
+
+7. Firebug fournit un interface d'inspection similaire a celui de Firefox. Il est complet et facile a utiliser. 
