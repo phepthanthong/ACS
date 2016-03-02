@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" 
+	"http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+<html xml:lang="fr" lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Défilement d’images</title>
+	<script type="text/javascript">
+		var last = 0;
+		var images = ["detoure.jpg", "gnu.png"];
+
+		function Arreter() {
+			last = images.length;
+			document.getElementById("image").style.display = "none";
+		}
+
+		function Activer() {
+			if (last == images.length){
+				last = 0;
+			} else{
+				last = (last+1) % images.length;
+				document.getElementById("image").src = images[last];
+				document.getElementById('image').style.display = 'block'; 
+				setTimeout(function () {Activer()}, 300); 
+			}
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<button onclick="Activer()">Activer</button>
+		<button onclick="Arreter()">Arreter</button>
+		<img id="image" src="" alt="" style="display: none;">
+	</div>
+</body>
+</html>

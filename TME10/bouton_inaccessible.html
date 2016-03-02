@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" 
+	"http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+<html xml:lang="fr" lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Un bouton inaccessible</title>
+	<script type="text/javascript">
+		var topNon = 80;
+		var leftNon = 80;
+
+		function merci(choix) {
+			alert("Merci d'avoir dit " + choix);
+		}
+
+		function bouger(balise) {
+			largeur = window.innerWidth;
+			hauteur = window.innerHeight;
+
+			ran1 = Math.random()*hauteur;
+			topNon = (topNon+ran1) % hauteur;
+			balise.style.top = topNon + 'px';
+
+			ran2 = Math.random()*largeur;
+			leftNon = (leftNon+ran2) % largeur;
+			balise.style.left = leftNon + 'px';
+		}
+	</script>
+</head>
+<body>
+	<form action="">
+		<fieldset style="width: 100px">
+		<button value="OUI" onclick="merci(this.value)">Oui</button>
+		<div style="position: absolute; left: 80px; top: 80px; margin-top: 7px ;" onmouseover="bouger(this)">
+			<button value="NON" onclick="merci(this.value)">Non</button>
+		</div>
+	</fieldset>
+	</form>	
+</body>
+</html>

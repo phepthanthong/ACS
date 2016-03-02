@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" 
+	"http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+<html xml:lang="fr" lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Qui suis-je en double</title>
+</head>
+<body onload="load_text()">
+	<script type="text/javascript">
+	function load_text() {
+		var infos = new Array(navigator.appName, navigator.userAgent, document.lastModified, document.location, document.referer, document.doctype.publicId );
+		var texte = "";
+		for (item in infos){
+			texte += infos[item] + "\n";
+		}
+		alert(texte);
+	}
+	</script>
+</body>
+</html>

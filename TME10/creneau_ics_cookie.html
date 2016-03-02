@@ -1,0 +1,119 @@
+<?php
+  define("RE_JOUR", "/^ *[0-9]{4}[0-1][0-9][0-3][0-9] *$/");
+  define("RE_HEURE", "/^ *[0-2][0-9][0-5][0-9][0-5][0-9] *$/");
+  define("RE_ICS", "/^ *\/?([\\w]+\/)*[\\w]+[.]ics *$/");
+  
+  if(isset($_POST["jour"]) && isset($_POST["debut"]) && isset($_POST["fin"]) && isset($_POST["file"])){
+    if(!preg_match($_POST["jour"], RE_JOUR))
+      setcookie("jour", "border:2px dashed red", time()+3600);
+    //Valeur d'expiration arbitraire, car le cookie va être supprimé par la JS
+    
+    if(!preg_match($_POST["debut"], RE_HEURE))
+      setcookie("debut", "border:2px dashed red", time()+3600);
+      
+    if(!preg_match($_POST["fin"], RE_HEURE))
+      setcookie("fin", "border:2px dashed red", time()+3600);
+      
+    if(!preg_match($_POST["ICS"], RE_ICS))
+      setcookie("ICS", "border:2px dashed red", time()+3600);
+      
+  }  
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" 
+        "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Créneau dans ICS</title>
+  </head> 
+  <body onload="setCSS()">
+    <h1>Créneau dans ICS</h1>
+    <form action="" method="post" enctype="multipart/form-data"
+	  onsubmit='return controleFormICS(this)'>
+      <fieldset>
+	<label for='jour'>Jour </label>
+	<input name='jour' id='jour' class="jour" />
+	<label for='debut'>Commencement </label>
+	<input name='debut' id='debut' class="debut"/>
+	<label for='fin'>Fin </label>
+	<input name='fin' id='fin' class="fin"/>
+      </fieldset>
+      <fieldset>
+	<label for='ICS'>Agenda </label>
+	<input type='file' name='ICS' id='ICS' class="ICS"/>
+	<input type='submit' value='Demander ce rendez-vous' />
+    </fieldset>
+    </form> 
+  <script type='application/javascript'>
+	var re_jour 	= /^ *[0-9]{4}[0-1][0-9][0-3][0-9] *$/;
+	var re_heure 	= /^ *[0-2][0-9][0-5][0-9][0-5][0-9] *$/;
+	var re_ics 		= new RegExp('^ */?([\\w]+\/)*[\\w]+[.]ics *$');
+	
+	var re_cookie = / *([\w\-_]+)=([^;]+) */;
+	var re_CSSProperty = /(^[\w\-_]+):(.*)$/;
+	
+	function setCSS(){
+	  //alert(document.cookie);
+	  var cookiesAsArray = getCookiesAsArray();
+	  
+	  for(var laclasse in cookiesAsArray){
+		//get the CSS property
+		var monCSS	= re_CSSProperty.exec(cookiesAsArray[laclasse]);
+		
+		if (monCSS) {
+		  var elements = document.getElementsByClassName(laclasse);
+		  for(var i = 0; i < elements.length; i++){
+			elements[i].style.setProperty(monCSS[1], monCSS[2]);
+		  }
+		  
+		  deleteCookie(monCSS);
+		}		
+	  }
+	}
+	
+	function getCookiesAsArray() {
+		var cookies 	= document.cookie.split(';');
+		var results		= new Array();
+		//Regex pour extraire la clef valeur
+		
+		for(var i=0; i<cookies.length; i++) {
+			//Enlever les espaces			
+			var r 		= re_cookie.exec(cookies[i]);
+			if (r) {
+			  results[r[1]] = r[2];  
+			}			
+		}
+		return results;
+	} 
+	
+	function deleteCookie(name){
+	  document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC"; 
+	}
+	
+	function signaleErreur(input, re)
+	{
+		var t = re.test(input.value);
+		
+		// pour mettre en rouge pointille les fautifs:
+		var className 	= input.getAttribute("class");
+		if (!t) {
+		  //positionner le cookie		  
+		  document.cookie 	= className+'=border:2px dashed red; ';
+		}else{
+		  document.cookie 	= className+'=border:1px solid; ';
+		}
+		return t;
+	}
+	
+	function controleFormICS(form) {
+		var t = true;
+		t &= signaleErreur(form.elements['jour'], re_jour);
+		t &= signaleErreur(form.elements['debut'], re_heure);
+		t &= signaleErreur(form.elements['fin'], re_heure);
+		t &= signaleErreur(form.elements['ICS'], re_ics);
+		
+		return true;
+	}
+  </script> 
+  </body> 
+</html>

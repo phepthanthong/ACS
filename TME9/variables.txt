@@ -1,0 +1,14 @@
+1. les types possibles pour les variables et leurs valeurs associées en Javascript:
+- String
+- Number
+- Array
+- Object
+- Boolean
+
+2. 
+- add(3,2) => 5
+- add(3,"2") => "32"
+- var s ; add(3,s) => NaN
+- s=2 ; add(3,s) => 5
+- s="hello" ; add(3,s) => "3hello"
+

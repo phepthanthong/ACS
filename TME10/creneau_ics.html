@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" 
+        "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Créneau dans ICS</title>
+  </head> 
+  <body>
+    <h1>Créneau dans ICS</h1>
+    <form action="" method="post" enctype="multipart/form-data"
+	  onsubmit='return controleFormICS(this)'>
+      <fieldset>
+	<label for='jour'>Jour </label>
+	<input class="jour" name='jour' id='jour'/>
+	<label for='debut'>Commencement </label>
+	<input name='debut' id='debut'/>
+	<label for='fin'>Fin </label>
+	<input name='fin' id='fin'/>
+      </fieldset>
+      <fieldset>
+	<label for='ICS'>Agenda </label>
+	<input type='file' name='ICS' id='ICS'/>
+	<input type='submit' value='Demander ce rendez-vous' />
+    </fieldset>
+    </form> 
+  <script type='application/javascript'>
+	var re_jour 	= /^ *[0-9]{4}[0-1][0-9][0-3][0-9] *$/;
+	var re_heure 	= /^ *[0-2][0-9][0-5][0-9][0-5][0-9] *$/;
+	var re_ics 		= new RegExp('^ */?([\\w]+\/)*[\\w]+[.]ics *$');
+	
+	function signaleErreur(input, re)
+	{
+		var t = re.test(input.value);
+		// pour mettre en rouge pointille les fautifs:
+		input.style.border = t ? "1px solid" : '2px dashed red';
+		return t;
+	}
+	
+	function controleFormICS(form) {
+		var t = true;
+		t &= signaleErreur(form.elements['jour'], re_jour);
+		t &= signaleErreur(form.elements['debut'], re_heure);
+		t &= signaleErreur(form.elements['fin'], re_heure);
+		t &= signaleErreur(form.elements['ICS'], re_ics);
+		
+		if (!t) return false;
+		
+		return true;
+	}
+  </script> 
+  </body> 
+</html>
