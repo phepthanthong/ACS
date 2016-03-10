@@ -1,0 +1,9 @@
+.couleur2 /* Bleu */   { background: #edf3fe;  color: #5da7c5; } 
+.couleur3 /* Bleu pastel */ { background: #ebe9ff; color: #766CF6; } 
+.couleur4 /* Orange */ { background: #fec; color: #fa9a00; } 
+.couleur5 /* Rouge */  { background: #ffeded; color: #f00; }
+/* Neutraliser la premiere ligne et les 2 premieres colonnes */
+.calendrier-salle th, .calendrier-salle td[rowspan] { display: none;}
+/* Pour toutes les autres, supprimer la bordure et occuper toute la largeur */
+.calendrier-salle td, .calendrier-salle td+td+td[rowspan]
+ { display: block; width: 100%; border: 0 }

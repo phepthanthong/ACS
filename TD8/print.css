@@ -1,0 +1,33 @@
+/* compenser la disparition des couleurs par une bordure fine */
+
+.couleur2 td,
+.couleur3 td,
+.couleur4 td,
+.couleur5 td,
+.couleur2 td+td+td[rowspan], 
+.couleur3 td+td+td[rowspan],
+.couleur4 td+td+td[rowspan],
+.couleur5 td+td+td[rowspan] { 
+	border: 1px solid;
+} 
+
+.couleur2 td+td+td+td+td,
+.couleur3 td+td+td+td+td,
+.couleur4 td+td+td+td+td, 
+.couleur5 td+td+td+td+td{ 
+	border-bottom: 1px dashed
+}
+
+.couleur2+.couleur2 td,
+.couleur3+.couleur3 td,
+.couleur4+.couleur4 td,
+.couleur5+.couleur5 td {
+	border-top: 1px dashed ;
+}
+
+.couleur2 td[rowspan], 
+.couleur3 td[rowspan], 
+.couleur4 td[rowspan],
+.couleur5 td[rowspan] { 
+	border: 0; 
+}

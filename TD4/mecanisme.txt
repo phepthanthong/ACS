@@ -1,0 +1,12 @@
+POP est un protocole à état, car avant de pouvoir utiliser les requêtes d'accès
+à la boîte de réception, il faut s'authentifier.
+Comme il  n'y a pas d'en-têtes comme en HTTP, une unique requête ne peut pas 
+à la fois fournir l'authentification et la demande d'accès,
+il faut au moins deux requêtes et même trois
+(car il y a USER et PASS, on ne donne pas les deux informations d'un coup).
+Entre chacune de ces requêtes, le serveur change d'état
+("inconnu" puis "nommé" puis "authentifié").
+
+Scénario plausible: 
+USER PASS STAT QUIT
+qui permet juste de savoir si on a des mails et combien.

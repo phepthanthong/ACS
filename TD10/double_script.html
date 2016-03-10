@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML Basic 1.1//EN'
+	'http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' lang='fr'>
+<head>
+<meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
+<title>TD10</title>
+<script type='text/javascript' src='ajax.js' ></script>
+<script type='text/javascript' src='groupe.js' ></script>
+<script type='text/javascript' src='verifier.js' ></script>
+<script type='text/javascript' src='presenter.js' ></script>
+<script type='text/javascript' src='notes.js' ></script>
+<script type='text/javascript' src='moyenne.js' ></script>
+</head>
+<body>
+  <form action="" onsubmit='return groupe_td10(this)'><fieldset>
+    <h1>Saisie de l'identifiant de groupe</h1>
+    <label for='groupe' id='label-groupe'>Groupe</label>
+    <input type='text' name='groupe' id='groupe' />
+    <span id='moyenne'>
+    </span>
+  </fieldset></form>
+  <form action='' method='post' onsubmit='return notes(this)'>
+	<fieldset id='f2' style='display:none'>
+		<h1>Saisie des notes</h1>
+		<ul id='u'></ul>
+		<input type='submit' value='Envoyer' />
+	</fieldset>
+  </form>
+</body></html>

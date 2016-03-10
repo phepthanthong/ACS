@@ -1,0 +1,9 @@
+.calendrier-salle { text-align: center; width: 100%;}
+.calendrier-salle caption { font-weight: bold; background: #ccc}
+.calendrier-salle td+td+td[rowspan] {font-style: italic;} /* Groupe */
+.calendrier-salle td+td+td+td[rowspan] {
+ font-variant: small-caps; /* Les noms en petite capitales, c'est classe */
+ font-style: normal; /* neutraliser la regle ci-dessus */
+}
+/* Si un TD est reduit a un UL, la presentation std est une perte de place */
+.calendrier-salle td > ul:first-child:last-child {list-style-type: none; padding: 0; margin:0}
