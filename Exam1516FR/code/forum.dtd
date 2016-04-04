@@ -1,0 +1,17 @@
+<!ELEMENT forum     (post*)>
+<!ELEMENT post    	(subject, text, response*) >
+
+<!ELEMENT subject   (#PCDATA) >
+<!ELEMENT text   	(#PCDATA) >
+<!ELEMENT response  (#PCDATA) >
+
+
+
+<!ATTLIST post
+         id           	CDATA   #REQUIRED
+		 user			CDATA 	#REQUIRED
+		 category		CDATA 	#REQUIRED
+		 date			CDATA 	#REQUIRED>
+<!ATTLIST response
+         user			CDATA 	#REQUIRED
+		 date			CDATA 	#REQUIRED>

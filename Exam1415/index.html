@@ -1,0 +1,693 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+<!-- saved from url=(0090)file:///C:/Users/TrungHieu/Desktop/Exam1415/1.%20SAX%20et%20ICS%20(PACS%202014%202015).htm -->
+<html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="generator" content="SPIP 2.1.28">
+<meta name="language" content="fr">
+<meta name="description" content="PACS 2014 2015">
+<!-- alternative std du W3C refuse par l'outil de test d'un certain moteur
+  style type='text/css'>@viewport { width: device-width; zoom: 1;}</style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" media="screen, projection" href="./index_files/spip.css">
+<link rel="stylesheet" type="text/css" media="print" href="./index_files/impression.css">
+<link rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 480px)" href="./index_files/handheld.css">
+<link rel="alternate" type="application/rss+xml" title="Syndiquer cette rubrique" href="http://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev/spip.php?page=backend-breves&amp;id_rubrique=3&amp;titre=%2020/07/2015"><link rel="search" type="application/opensearchdescription+xml" href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev/spip.php?page=opensearch.xml" title="PACS 2014 2015">
+
+ <link rel="prefetch" href="http://prefetch.validatorsearch.verisignlabs.com/">
+<title>1. SAX et ICS (PACS 2014 2015)</title>
+</head>
+<body class="default-parameters">
+<div id="navigation-upmc">
+	<div class="menu-lv1">
+		<a class="menu-logo" href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev/ecrire/" title="Espace privé">Espace privé</a>
+	</div>
+	<div class="menu-lv1"><a href="http://www.upmc.fr/" title="Université Pierre et Marie Curie">UPMC</a></div>
+	<div class="menu-lv1 fs80"><a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev" title="Accueil du site">PACS 2014 2015</a></div>
+	<div class="menu-lv1"><a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev/spip.php?rubrique3" title="Programmation des Architectures Clients-serveur">pacs</a></div>
+
+
+<div class="menu-lv1">Navigation dans la page</div><ul class="menu-lv1">
+<li class="menu-lv2"><a href="file:///C:/Users/TrungHieu/Desktop/Exam1415/1.%20SAX%20et%20ICS%20(PACS%202014%202015).htm#a1">La tribu sans attribut</a></li>
+<li class="menu-lv2"><a href="file:///C:/Users/TrungHieu/Desktop/Exam1415/1.%20SAX%20et%20ICS%20(PACS%202014%202015).htm#a2">Durée</a></li>
+<li class="menu-lv2"><a href="file:///C:/Users/TrungHieu/Desktop/Exam1415/1.%20SAX%20et%20ICS%20(PACS%202014%202015).htm#a3">Quelle URL&nbsp;? </a></li>
+<li class="menu-lv2"><a href="file:///C:/Users/TrungHieu/Desktop/Exam1415/1.%20SAX%20et%20ICS%20(PACS%202014%202015).htm#a4">Le calendrier HTML</a></li>
+<li class="menu-lv2"><a href="file:///C:/Users/TrungHieu/Desktop/Exam1415/1.%20SAX%20et%20ICS%20(PACS%202014%202015).htm#a5">Encore du boulot</a></li>
+<li class="menu-lv2"><a href="file:///C:/Users/TrungHieu/Desktop/Exam1415/1.%20SAX%20et%20ICS%20(PACS%202014%202015).htm#a6">Contrôler les saisies</a></li>
+<li class="menu-lv2"><a href="file:///C:/Users/TrungHieu/Desktop/Exam1415/1.%20SAX%20et%20ICS%20(PACS%202014%202015).htm#a7">Mise en place du formulaire</a></li>
+<li class="menu-lv2"><a href="file:///C:/Users/TrungHieu/Desktop/Exam1415/1.%20SAX%20et%20ICS%20(PACS%202014%202015).htm#a8">Prise en compte des saisies</a></li>
+<li class="menu-lv2"><a href="file:///C:/Users/TrungHieu/Desktop/Exam1415/1.%20SAX%20et%20ICS%20(PACS%202014%202015).htm#a9">Le format ICS</a></li>
+<li class="menu-lv2"><a href="file:///C:/Users/TrungHieu/Desktop/Exam1415/1.%20SAX%20et%20ICS%20(PACS%202014%202015).htm#a10">Annexes</a></li>
+</ul>
+
+
+<div class="menu-lv1">
+Authentifié sous<br>Nguyen Si Duy Khiem</div>	<div class="menu-lv1-last">&nbsp;</div>
+</div>
+<div id="content">
+
+<h1>pacs&nbsp;: Contrôles des Connaissances<br>1.  SAX et ICS<br>examen 20/07/2015</h1>
+<h2 style="text-align: center; color: red">Nguyen Si Duy Khiem&nbsp;22/40<br>Dernière importation 17 juillet 2015 à 10h46min
+<script type="text/javascript">var derniere_modif = 1437122773</script>
+
+</h2><div style="color: red; font-style: italic; margin: 2em; text-align: justify">
+Les fichiers à créer seront placés exclusivement à la racine du sous-répertoire <tt>public_html</tt>
+ de votre répertoire personnel, et seront automatiquement ramassés. 
+Seuls les fichiers demandés le seront, aussi il est impératif de bien 
+contrôler leur création: nom exact (sans confondre minuscules et 
+majuscules, tiret et souligné etc, ni placer des espaces autour du nom) 
+et droit d'accès 640 pour un fichier non exécutable et droit d'accès 750
+ pour ses répertoires parents ou un fichier exécutable. Dans le cas où 
+une réponse nécessite les fonctions écrites dans une réponse précédente,
+ celles-ci ne doivent pas être recopiées, le recours au mécanisme 
+d'inclusion des langages de programmation étant plus fiable et plus 
+lisible.
+</div>
+<p>A partir d’un fichier en XML, fourni en annexe, on construit une page
+ XHTML,  que l’on complétera par un formulaire de saisies, celles-ci 
+seront contrôlées par JavaScript avant envoi au serveur HTTP. Il faudra 
+manipuler des saisies indicées,  et au final transmettre un document au 
+format ICS.</p>
+<p>Notes sur 40.</p>
+<div id="sequence4595">
+<span id="e37544"></span>
+
+
+<h2 id="a1">1 La tribu sans attribut <small>(6&nbsp;point(s))</small></h2>
+<p>Le  fichier fourni avec cet énoncé est une version  XML d’un 
+sous-ensemble du format ICS décrivant un agenda. La date d’un événement 
+est donné par la balise <tt>DTSTART</tt> dont le contenu est un nombre 
+de 8 chiffres dont les 4 premiers donnent l’année, les 2 suivants le 
+mois et les 2 derniers le jour de l’événement (on ne précise donc pas 
+l’heure).</p>
+
+<p>A l’aide d’un analyseur SAX, écrire une fonction PHP <tt>evenements</tt>
+ prenant en argument le nom d’un fichier XML comme celui-ci, et 
+retournant en résultat un tableau dont les index sont les contenus des 
+balises <tt>DTSTART</tt> du fichier analysé, ces valeurs étant supposées
+ toujours différentes. La valeur associée à chacun de ces index est un 
+sous-tableau  dont les deux éléments sont les contenus des balises  <tt>URL</tt> et <tt>ATTENDEE</tt> sœurs de la  balise <tt>DTSTART</tt> considérée.
+En outre, l’index 0 du tableau retourné contiendra le tableau des attributs de la balise initiale <tt>VCALENDAR</tt>.  Si le fichier XML n’existe pas ou est invalide, la fonction retourne un tableau vide.</p>
+
+
+
+<div class="solution" id="s1">
+
+<div class="solution">Barème<ol class="spip"><li> initialisation du phraseur</li><li> gestion de ses erreurs</li><li> gestion du résultat final</li><li> preneur de texte</li><li> preneurs des balises</li><li> gestion des attributs</li></ol></div>
+</div> 
+<div id="reponses37544">
+
+<ul class="forum-total">
+
+<li class="forum-fil" id="forum112060"> 
+	    <div class="reponse">
+	<div class="forum-titre">La tribu sans attribut</div>
+17 juillet 2015 à 10h14min, par  <a href="mailto:">Nguyen Si Duy Khiem</a>  (et 3416987)
+	<div><div class="spip_code"><code>&lt;?php<br>
+function evenements($my_fichier) {<br>
+ &nbsp;global $items;<br>
+ &nbsp;$items = array();<br>
+ &nbsp;if (!is_readable($my_fichier)) return "fichier $my_fichier introuvable";<br>
+ &nbsp;$phrase = xml_parser_create();<br>
+ &nbsp;xml_parser_set_option($phrase, XML_OPTION_CASE_FOLDING, 0);<br>
+ &nbsp;xml_set_element_handler($phrase, "ouvert", "ferme");<br>
+ &nbsp;xml_set_character_data_handler($phrase, "texte");<br>
+ &nbsp;if (!xml_parse($phrase, file_get_contents($my_fichier)))<br>
+ &nbsp; &nbsp; &nbsp;return sprintf("erreur XML : %s à la ligne %d",<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; xml_error_string(xml_get_error_code($phrase)),<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; xml_get_current_line_number($phrase));<br>
+ &nbsp;return $items;<br>
+}<br>
+<br>
+function texte($phrase, $data) {<br>
+ &nbsp; global $texte;<br>
+ &nbsp; $texte .= $data;<br>
+}<br>
+<br>
+function ouvert($phrase, $nom, $attri) {<br>
+ &nbsp; &nbsp;global $items, $last, $texte;<br>
+ &nbsp; &nbsp;if ($nom == 'VCALENDAR')<br>
+ &nbsp; &nbsp; &nbsp; &nbsp;$items[0] = $attri;<br>
+ &nbsp; &nbsp;$last = $nom;<br>
+ &nbsp; &nbsp;$texte = '';<br>
+}<br>
+<br>
+function ferme($phrase, $nom) {<br>
+ &nbsp; &nbsp;global $items, $last, $texte, $dtstart, $url, $attendee;<br>
+ &nbsp;switch($nom) {<br>
+ &nbsp; &nbsp;case 'DTSTART' : $dtstart = $texte; break;<br>
+ &nbsp; &nbsp;case 'URL' : $url = $texte; break;<br>
+ &nbsp; &nbsp;case 'ATTENDEE' : $attendee = $texte; break;<br>
+ &nbsp; &nbsp;case 'VEVENT' : $items[$dtstart] = array($url, $attendee); break;<br>
+ &nbsp;default:<br>
+ &nbsp;}<br>
+ &nbsp;$texte = '';<br>
+}<br>
+<br>
+<br>
+print_r(evenements("pacs-ics.xml"));<br>
+?&gt;</code></div></div>
+	    </div>
+
+<ul>
+
+<li id="forum112115" class="correction">
+	<div>note&nbsp;5<br>par  Saint James Emmanuel</div>
+	<div><ul class="spip"><li>  initialisation du phraseur
+_&nbsp;: 1</li><li>  gestion de ses erreurs
+_&nbsp;: 0</li><li>  gestion du résultat final
+_&nbsp;: 1</li><li>  preneur de texte
+_&nbsp;: 1</li><li>  preneurs des balises
+_&nbsp;: 1</li><li>  gestion des attributs&nbsp;: 1</li></ul>
+<p>Il fallait retourner un tableau vide en cas d’erreur.</p></div>
+</li>
+</ul>
+
+</li>
+
+</ul>
+
+</div><br><span id="e37545"></span>
+
+
+<h2 id="a2">2 Durée <small>(4&nbsp;point(s))</small></h2>
+<p>On souhaite à terme afficher l’ensemble des informations recueillies 
+dans le fichier XML sous la forme d’une table XHTML de 7 colonnes (une 
+par jour de la semaine) et d’autant de lignes que nécessaires, comme le 
+fait la <a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev/spip.php?rubrique3" class="spip_in">page d’accueil de cet enseignement</a>.
+ La première chose à faire est de trouver le premier lundi avant le 
+premier événement figurant dans le tableau, et le premier dimanche après
+ le dernier événement, afin d’avoir une matrice complète.</p>
+
+<p>La fonction PHP <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/PHP/html/function.mktime.html" class="spip_glossaire" title="Voir la description de &#39;mktime&#39; dans la documentation de &#39;php&#39;" rel="external">mktime</a> permet de fabriquer, à partir d’une date, le nombre de secondes écoulées entre le 1/1/1970 et cette date. La fonction PHP <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/PHP/html/function.date.html" class="spip_glossaire" title="Voir la description de &#39;date&#39; dans la documentation de &#39;php&#39;" rel="external">date</a>&nbsp;permet
+ d’obtenir plusieurs informations à partir d’un tel nombre de secondes 
+donné en deuxième argument. En particulier un premier argument égal à la
+ chaîne <tt>N</tt> fait retourner à cette fonction le numéro du jour de 
+la semaine (1 pour Lundi, ... 7 pour dimanche). Signalons également les 
+fonctions PHP <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/PHP/html/function.intval.html" class="spip_glossaire" title="Voir la description de &#39;intval&#39; dans la documentation de &#39;php&#39;" rel="external">intval</a> et <a href="http://fr.wikipedia.org/wiki/strval" class="spip_glossaire" title="Voir la description de &#39;strval&#39; dans la documentation de &#39;hp&#39;" rel="external">strval</a>&nbsp;permettant de passer d’un nombre à sa représentation sous forme de chaîne et inversement.</p>
+
+<p>Ecrire une fonction PHP <tt>duree</tt>, recevant en argument un tableau tel que décrit précédemment, et retournant un tableau de deux éléments&nbsp;:</p>
+
+<ul class="spip"><li> le premier lundi avant le premier événement figurant dans le tableau initial&nbsp;;</li><li> le premier dimanche après le dernier événement.</li></ul>
+<p>Ces deux valeurs seront exprimées en nombre de secondes depuis le 1/1/1970. On utilisera <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/PHP/html/function.unset.html" class="spip_glossaire" title="Voir la description de &#39;unset&#39; dans la documentation de &#39;php&#39;" rel="external">unset</a>&nbsp;pour éliminer l’élément de tableau d’index 0 qui n’a pas d’intérêt dans cette question.</p>
+
+
+
+<div class="solution" id="s2">
+
+<div class="solution">Barème<ol class="spip"><li> détermination du min et du max</li><li> conversions des 8 chiffres en secondes depuis le 1/1/1970</li><li> détermination du lundi et du dimanche</li><li> construction du résultat</li></ol></div>
+</div> 
+<div id="reponses37545">
+
+<ul class="forum-total">
+
+<li class="forum-fil" id="forum112068"> 
+	    <div class="reponse">
+	<div class="forum-titre">Durée</div>
+17 juillet 2015 à 10h20min, par  <a href="mailto:">Nguyen Si Duy Khiem</a>  (et 3416987)
+	<div><div class="spip_code"><code>&lt;?php<br>
+<br>
+if (function_exists("date_default_timezone_set")) {<br>
+ &nbsp;if (ini_get("date.timezone") =='')<br>
+ &nbsp; &nbsp; &nbsp;date_default_timezone_set("Europe/Paris");<br>
+}<br>
+<br>
+function duree($events)<br>
+{<br>
+ &nbsp; &nbsp;unset($events[0]);<br>
+ &nbsp; &nbsp;$dates = array_keys($events);<br>
+ &nbsp; &nbsp;sort($dates);<br>
+ &nbsp; &nbsp;$debut = $dates[0];<br>
+ &nbsp; &nbsp;$fin = array_pop($dates);<br>
+ &nbsp; &nbsp;$d = mktime(1,1,1, substr($debut,4,2), substr($debut,6,2), substr($debut,0,4));<br>
+ &nbsp; &nbsp;$f = mktime(1,1,1, substr($fin,4,2), substr($fin,6,2), substr($fin,0,4));<br>
+ &nbsp; &nbsp;return array($d, $f);<br>
+}<br>
+<br>
+require_once("evenements.php");<br>
+var_dump(duree(evenements("pacs-ics.xml")));<br>
+?&gt;</code></div></div>
+	    </div>
+
+<ul>
+
+<li id="forum112129" class="correction">
+	<div>note&nbsp;3<br>par  Saint James Emmanuel</div>
+	<div><ul class="spip"><li>  détermination du min et du max
+_&nbsp;: 1</li><li>  conversions des 8 chiffres en secondes depuis le 1/1/1970
+_&nbsp;: 1</li><li>  détermination du lundi et du dimanche
+_&nbsp;: 0</li><li>  construction du résultat&nbsp;: 1</li></ul>
+<p>incomplet.</p></div>
+</li>
+</ul>
+
+</li>
+
+</ul>
+
+</div><br><span id="e37546"></span>
+
+
+<h2 id="a3">3 Quelle URL&nbsp;?  <small>(2&nbsp;point(s))</small></h2>
+<p>La table XHTML à produire va se compliquer au cours de l’énoncé, on 
+va donc écrire plusieurs fonctions fournissant le contenu des balises <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/html4/struct/tables.html#edef-TD" class="spip_glossaire" title="Voir la description de &#39;td&#39; dans la documentation de &#39;html&#39;" rel="external">td</a>&nbsp;à venir, fonctions que l’on passera en argument de la fonction qui produira effectivement ces balises.</p>
+
+<p>Ecrire une fonction <tt>affiche</tt> prenant en argument un tableau 
+tel que décrit à la deuxième question, et une date sous forme de 8 
+chiffres. Si ce nombre n’est pas un index de ce tableau, autrement dit 
+si ce tableau ne possède pas de valeur associée à cet index, la fonction
+ retourne simplement cette date. Autrement, la valeur associée est donc 
+un sous-tableau dont le premier élément est une URL et le second une 
+adresse mail. La fonction doit alors retourner une balise <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/html4/struct/links.html#edef-A" class="spip_glossaire" title="Voir la description de &#39;A&#39; dans la documentation de &#39;html&#39;" rel="external">A</a>&nbsp;emmenant
+ sur cette URL, la zone de clic étant la date. En cas d’adresse mail 
+présente,  elle  figurera en-dessous de cette zone de clic.</p>
+
+
+
+<div class="solution" id="s3">
+
+<div class="solution">Barème<ol class="spip"><li> cas de la date sans événement</li><li> cas de la date avec événement</li></ol></div>
+</div> 
+<div id="reponses37546">
+
+<ul class="forum-total">
+
+<li class="forum-fil" id="forum112092"> 
+	    <div class="reponse">
+	<div class="forum-titre">Quelle URL&nbsp;? </div>
+17 juillet 2015 à 10h35min, par  <a href="mailto:">Nguyen Si Duy Khiem</a>  (et 3416987)
+	<div><div class="spip_code"><code>&lt;?php<br>
+require_once('evenements.php');<br>
+function affiche($events, $date)<br>
+{<br>
+ &nbsp; if (!isset($events[$date]))<br>
+ &nbsp; &nbsp; &nbsp; return $date;<br>
+ &nbsp; list($une_url, $mail_address) = $events[$date];<br>
+ &nbsp; return "&lt;a href='$une_url'&gt;$date&lt;/a&gt;&lt;br/&gt;$mail_address";<br>
+}<br>
+<br>
+echo affiche(evenements('pacs-ics.xml'), 20140820);<br>
+echo affiche(evenements("pacs-ics.xml"), 20100225);<br>
+?&gt;</code></div></div>
+	    </div>
+
+<ul>
+
+<li id="forum112139" class="correction">
+	<div>note&nbsp;2<br>par  Saint James Emmanuel</div>
+	<div><ul class="spip"><li>  cas de la date sans événement
+_&nbsp;: 1</li><li>  cas de la date avec événement&nbsp;: 1</li></ul></div>
+</li>
+</ul>
+
+</li>
+
+</ul>
+
+</div><br><span id="e37547"></span>
+
+
+<h2 id="a4">4 Le calendrier HTML <small>(6&nbsp;point(s))</small></h2>
+<p>Ecrire une fonction PHP <tt>calendrier</tt>, prenant en argument un tableau tel que décrit à la question 2, et une fonction supposée de même signature que la fonction <tt>affiche</tt> écrite précédemment. Cette nouvelle fonction doit retourner en résultat une <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/html4/struct/tables.html#edef-TABLE" class="spip_glossaire" title="Voir la description de &#39;table&#39; dans la documentation de &#39;html&#39;" rel="external">table</a> XHTML, dont la première ligne comporte 7 balises <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/html4/struct/tables.html#edef-TH" class="spip_glossaire" title="Voir la description de &#39;th&#39; dans la documentation de &#39;html&#39;" rel="external">th</a>&nbsp;dont
+ les contenus sont les noms des jours de la semaine. Les lignes 
+suivantes indiquent les événements apparaissant le jour concerné, leur 
+contenu étant obtenu en appliquant la fonction passée en argument sur le
+ tableau des événements et la date de ce jour.</p>
+
+<p>Le résultat sera donc assez proche de celui de la page d’accueil de 
+cet enseignement, réduit aux dates de cours et d’examen, et évidemment 
+sans aucun style ni bouton de navigation.</p>
+
+
+
+<div class="solution" id="s4">
+
+<div class="solution">Barème<ol class="spip"><li> ligne de TH</li><li> gestion des dates successives</li><li> gestion des TR</li><li> gestion des TD</li><li> application de la fonction en argument</li><li> format général de la table</li></ol></div>
+</div> 
+<div id="reponses37547">
+
+<ul class="forum-total">
+
+<li class="forum-fil" id="forum112098"> 
+	    <div class="reponse">
+	<div class="forum-titre">Le calendrier HTML</div>
+17 juillet 2015 à 10h41min, par  <a href="mailto:">Nguyen Si Duy Khiem</a>  (et 3416987)
+	<div><div class="spip_code"><code>&lt;?php<br>
+include_once('duree.php');<br>
+include_once('affiche.php');<br>
+include_once('formaffiche.php');<br>
+function calendrier($events, $calen_affiche)<br>
+{<br>
+ &nbsp; &nbsp;list($num1, $num2) = duree($events);<br>
+ &nbsp; &nbsp;$temp = 0;<br>
+ &nbsp; &nbsp;$tstr = '';<br>
+ &nbsp; &nbsp;$lstr = "";<br>
+ &nbsp; &nbsp;$num2 += 24*3600;<br>
+ &nbsp; &nbsp;while ($num1 &lt; $num2) {<br>
+ &nbsp; &nbsp; &nbsp; &nbsp;$l .= "&lt;td style='border: 1px solid 
+black'&gt;" . $calen_affiche($events, date('Ymd', $num1)) . 
+"&lt;/td&gt;\n";<br>
+ &nbsp; &nbsp; &nbsp; &nbsp;$temp = ($temp+1)%7;<br>
+ &nbsp; &nbsp; &nbsp; &nbsp;if (!$temp) {$tstr .= "&lt;tr &gt;$lstr&lt;/tr&gt;\n";$lstr='';}<br>
+ &nbsp; &nbsp; &nbsp; &nbsp;$num1 += 24*3600;<br>
+ &nbsp; &nbsp;}<br>
+ &nbsp; &nbsp;return "&lt;table&gt;$tstr$lstr&lt;/table&gt;";<br>
+}<br>
+<br>
+echo calendrier(evenements("pacs-ics.xml"), "formaffiche");<br>
+?&gt;</code></div></div>
+	    </div>
+
+<ul>
+
+<li id="forum112148" class="correction">
+	<div>note&nbsp;5<br>par  Saint James Emmanuel</div>
+	<div><ul class="spip"><li>  ligne de TH
+_&nbsp;: 0</li><li>  gestion des dates successives
+_&nbsp;: 1</li><li>  gestion des TR
+_&nbsp;: 1</li><li>  gestion des TD
+_&nbsp;: 1</li><li>  application de la fonction en argument
+_&nbsp;: 1</li><li>  format général de la table&nbsp;: 1</li></ul></div>
+</li>
+</ul>
+
+</li>
+
+</ul>
+
+</div><br><span id="e37548"></span>
+
+
+<h2 id="a5">5 Encore du boulot <small>(3&nbsp;point(s))</small></h2>
+<p>On souhaite à présent que les cases non remplies de la table offrent 
+deux champs de saisies pour introduire une URL fournissant le support 
+pédagogique et le mail de l’intervenant. Tous ces champs appartiendront à
+ un unique formulaire englobant toute la table, afin de pouvoir 
+introduire plusieurs saisies d’un seul coup.  Dans cette situation, il 
+faut utiliser la possibilité de donner aux attributs <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/html4/types.html#type-name" class="spip_glossaire" title="Voir la description de &#39;name&#39; dans la documentation de &#39;html&#39; section 1" rel="external">name</a>&nbsp;de la balise <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/html4/interact/forms.html#edef-INPUT" class="spip_glossaire" title="Voir la description de &#39;input&#39; dans la documentation de &#39;html&#39;" rel="external">input</a>&nbsp;un nom d’élément de tableau (par exemple ici <tt>name="url[20100625]"</tt> et <tt>name="mail[20100625]"</tt>).</p>
+
+<p>Ecrire une fonction <tt>formaffiche</tt>, de même signature que <tt>affiche</tt>
+ et de même spécification, sauf qu’en cas d’URL absente, on retourne en 
+plus de la date deux champs de saisies pour l’’URL et le mail, nommés 
+comme indiqué ci-dessus. Ces deux balises <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/html4/interact/forms.html#edef-INPUT" class="spip_glossaire" title="Voir la description de &#39;input&#39; dans la documentation de &#39;html&#39;" rel="external">input</a>&nbsp;seront précédées d’une balise <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/html4/interact/forms.html#edef-LABEL" class="spip_glossaire" title="Voir la description de &#39;label&#39; dans la documentation de &#39;html&#39;" rel="external">label</a>&nbsp;appropriée. Pour cela, il faut utilise un attribut <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/html4/struct/global.html#adef-id" class="spip_glossaire" title="Voir la description de &#39;id&#39; dans la documentation de &#39;html&#39; section 1" rel="external">id</a>, et comme 
+la norme XML leur interdit de contenir des crochets , on les remplacera par un tiret.</p>
+
+
+
+<div class="solution" id="s5">
+
+<div class="solution">Barème<ol class="spip"><li> successions des balises </li><li> attribut for et id</li><li> attribut name</li></ol></div>
+</div> 
+<div id="reponses37548">
+
+<ul class="forum-total">
+
+<li class="forum-fil" id="forum112107"> 
+	    <div class="reponse">
+	<div class="forum-titre">Encore du boulot</div>
+17 juillet 2015 à 10h46min, par  <a href="mailto:">Nguyen Si Duy Khiem</a>  (et 3416987)
+	<div><div class="spip_code"><code>&lt;?php<br>
+include_once('duree.php');<br>
+include_once('affiche.php');<br>
+include_once('evenements.php');<br>
+function formaffiche($events, $date)<br>
+{<br>
+ &nbsp; &nbsp;if (isset($events[$date])) {<br>
+ &nbsp; &nbsp; &nbsp; &nbsp;list($url, $mail) = $events[$date];<br>
+ &nbsp; &nbsp; &nbsp; &nbsp;return "&lt;a href='$url'&gt;$date&lt;/a&gt;&lt;br /&gt;$mail";<br>
+ &nbsp; &nbsp;}<br>
+ &nbsp; &nbsp;$u = "url$date";<br>
+ &nbsp; &nbsp;$d = "mail$date";<br>
+ &nbsp; &nbsp;return $date .<br>
+ &nbsp; &nbsp;"\n&lt;br /&gt;&lt;label for='$u'&gt;URL&lt;/label&gt;&lt;input name='url[$date]' id='$u' /&gt;" .<br>
+ &nbsp; &nbsp;"\n&lt;br /&gt;&lt;label for='$d'&gt;Mail&lt;/label&gt;&lt;input name='mail[$date]' id='$u' /&gt;";<br>
+}<br>
+<br>
+echo calendrier(evenements('pacs-ics.xml'), 'affiche');<br>
+?&gt;</code></div></div>
+	    </div>
+
+<ul>
+
+<li id="forum112198" class="correction">
+	<div>note&nbsp;3<br>par  adm</div>
+	<div><ul class="spip"><li>  successions des balises 
+_&nbsp;: 1</li><li>  attribut for et id
+_&nbsp;: 1</li><li>  attribut name&nbsp;: 1</li></ul></div>
+</li>
+</ul>
+
+</li>
+
+</ul>
+
+</div><br><span id="e37549"></span>
+
+
+<h2 id="a6">6 Contrôler les saisies <small>(5&nbsp;point(s))</small></h2>
+<p>Avant d’envoyer les saisies de ce grand formulaire, on souhaite 
+contrôler que toutes les saisies sont plausibles. Pour cela, on regarde 
+pour chaque saisie dont le nom commence par <tt>url</tt> si la valeur saisie est soit vide, soit commence par <tt>http://</tt>
+ou <tt>https://</tt>,
+et pour les autres saisies si elles sont soit vides, soit comportent un <tt>@</tt> mais ni au début ni à la fin.</p>
+
+<p>Ecrire une fonction JavaScript recevant en argument un nœud du DOM de type <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/html4/interact/forms.html#edef-FORM" class="spip_glossaire" title="Voir la description de &#39;form&#39; dans la documentation de &#39;html&#39;" rel="external">form</a>,
+ et effectuant le contrôle décrit ci-dessus. Si toutes les saisies sont 
+correctes, la fonction retourne True, sinon elle retourne False.</p>
+
+
+
+<div class="solution" id="s6">
+
+<div class="solution">Barème<ol class="spip"><li> parcours des saisies</li><li> distinction des 2 cas</li><li> contrôle des URL</li><li> contrôle des mails</li><li> retour Vrai/Faux</li></ol></div>
+</div> 
+<div id="reponses37549">
+
+<ul class="forum-total">
+
+<li class="forum-fil" id="forum112102"> 
+	    <div class="reponse">
+	<div class="forum-titre">Contrôler les saisies</div>
+17 juillet 2015 à 10h44min, par  <a href="mailto:">Nguyen Si Duy Khiem</a>  (et 3416987)
+	<div><div class="spip_code"><code>function controler(form)<br>
+{<br>
+ &nbsp; &nbsp;for (var ele in form.elements) {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; var a = form.elements[ele].a;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; var valeur = form.elements[ele].value;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; if (valeur) {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (/^url/.test(a))<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (!/^http/.test(valeur)) return false;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else if (!/.@./.test(valeur))<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return &nbsp;false; &nbsp; <br>
+&nbsp; &nbsp; &nbsp; &nbsp; }<br>
+ &nbsp; &nbsp;}<br>
+ &nbsp; &nbsp;return true;<br>
+}</code></div></div>
+	    </div>
+
+<ul>
+
+<li id="forum112176" class="correction">
+	<div>note&nbsp;4<br>par  Saint James Emmanuel</div>
+	<div><ul class="spip"><li>  parcours des saisies
+_&nbsp;: 1</li><li>  distinction des 2 cas
+_&nbsp;: 1</li><li>  contrôle des URL
+_&nbsp;: 0</li><li>  contrôle des mails
+_&nbsp;: 1</li><li>  retour Vrai/Faux&nbsp;: 1</li></ul>
+<p>Il fallait contrôler aussi le "&nbsp;://".</p></div>
+</li>
+</ul>
+
+</li>
+
+</ul>
+
+</div><br><span id="e37550"></span>
+
+
+<h2 id="a7">7 Mise en place du formulaire <small>(3&nbsp;point(s))</small></h2>
+<p>Ecrire une fonction PHP <tt>formcal</tt> prenant en argument un 
+tableau tel que décrit à la question 1, et retournant une page XHTML 
+valide complète, référençant le fichier JavaScript écrit auparavant, et 
+présentant le formulaire de saisie d’événements tel que décrit 
+précédemment. Le formulaire ne sera  envoyé que si les saisies sont  
+correctes, et le sera en méthode POST. L’attribut <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/html4/interact/forms.html#adef-action" class="spip_glossaire" title="Voir la description de &#39;action&#39; dans la documentation de &#39;html&#39; section 1" rel="external">action</a>&nbsp;sera
+ laissé vide afin que le formulaire renvoie sur le script qui 
+l’utilisera effectivement. On pourra utiliser la fonction <tt>entete</tt> vue en travaux dirigés pour produire l’en-tête HTML.</p>
+
+
+
+<div class="solution" id="s7">
+
+<div class="solution">Barème<ol class="spip"><li> formulaire</li><li> balise Script</li><li> validité XHTML</li></ol></div>
+</div> 
+<div id="reponses37550">
+ 
+</div><br><span id="e37551"></span>
+
+
+<h2 id="a8">8 Prise en compte des saisies <small>(3&nbsp;point(s))</small></h2>
+<p>Ecrire une fonction PHP <tt>saisircal</tt> prenant en premier argument le nom du fichier XML des événements,  et un second argument destiné à recevoir le tableau <tt>$_POST</tt>. A l’aide de la fonction <tt>evenements</tt>
+ déjà écrite, on  commence par construire le tableau d’événements à 
+partir du fichier XML fourni. Ensuite, si le tableau possède un index  
+nommé <tt>url</tt> ayant un sous-tableau comme valeur associée (<tt>$_POST</tt>
+ sera ainsi formé lors de la soumission du formulaire avec au moins une 
+saisie), il faut le parcourir afin de compléter le tableau d’événements 
+avec les dates présentes dans ce sous-tableau et le couple URL et mail 
+indiqué pour chacune. Par mesure de sécurité, on vérifiera que chaque 
+index est un nombre à 8 chiffres, avec pour valeur associé un tel 
+couple.</p>
+
+<p>Au final, la fonction renvoie le tableau des événements ainsi complété.</p>
+
+
+
+<div class="solution" id="s8">
+
+<div class="solution">Barème<ol class="spip"><li> parcours des entrées</li><li> test des index</li><li> ajout au tableau</li></ol></div>
+</div> 
+<div id="reponses37551">
+ 
+</div><br><span id="e37552"></span>
+
+
+<h2 id="a9">9 Le format ICS <small>(8&nbsp;point(s))</small></h2>
+<p>Ecrire pour finir un script agissant ainsi&nbsp;:</p>
+
+<ul class="spip"><li> si le tableau <tt>$_POST</tt> est vide, il s’agit de la première visite et on répond par la page XHTML construite par la fonction <tt>formcal</tt>&nbsp;;</li><li> sinon on applique la fonction <tt>saisircal</tt> sur le fichier XML et le tableau $_POST. Son résultat doit alors servir à envoyer au client HTTP un document de type MIME <tt>text/calendar</tt>. On trouvera à la séance <a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev/spip.php?rubrique4517" class="spip_in">Un type MIME pour les calendriers </a>
+ la description de ce format, et on trouvera aussi sur la page d’accueil
+ de l’enseignement de tels documents à télécharger pour avoir des 
+exemples complets.  Dans le cas qui nous occupe, chaque attribut de la 
+balise <tt>VCALENDAR</tt> doit être converti en une ligne comportant le 
+nom de l’attribut, un deux-points, et la valeur de l’attribut. Pour 
+chacun des événements, on produira les lignes
+<tt>URL</tt> et 
+<tt>ATTENDEE</tt> lorsque ces valeurs sont présentes, et surtout une ligne <tt>DTSART</tt>. En revanche il n’y a pas de lignes 
+<tt>DTEND</tt>, le fichier XML ne précisant pas cette information, non plus que de lignes
+<tt>DESCRIPTION</tt> et
+<tt>SUMMARY</tt>.</li></ul>
+
+
+
+<div class="solution" id="s9">
+
+<div class="solution">Barème<ol class="spip"><li> test de $_POST</li><li> appel de saisircal</li><li> Content-Type</li><li> autres en-têtes HTTP</li><li> premières lignes du calendrier</li><li> séquence des blocs d’événements</li><li> ligne URL</li><li> ligne ATTENDEE</li></ol></div>
+</div> 
+<div id="reponses37552">
+ 
+</div><br><span id="e56356"></span>
+
+<h2 id="a10">10 Annexes</h2>
+<div class="spip_code"><pre>&lt;!DOCTYPE ICS SYSTEM 'ics.dtd'&gt;
+&lt;VCALENDAR
+VERSION="2.0"
+PRODID=" DidacSPIP Emmanuel.Saint-James@upmc.fr"
+CALSCALE="GREGORIAN"
+X-WR-CALNAME="pacs Cours"
+X-WR-RELCALID="/lmd/licence/2014/ue/LI355V-2015fev/spip.php?action=organiser&amp;amp;id_rubrique=3&amp;amp;site=https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev&amp;amp;nom=pacs Cours&amp;amp;cours=1"
+&gt;
+&lt;VEVENT&gt;
+&lt;DTSTART&gt;20100211&lt;/DTSTART&gt;
+&lt;URL&gt;https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev/Maitriser-les-hypertextes-HTML&lt;/URL&gt;
+&lt;ATTENDEE&gt;Emmanuel.Saint-James@lip6.fr&lt;/ATTENDEE&gt;
+&lt;/VEVENT&gt;
+&lt;VEVENT&gt;
+&lt;DTSTART&gt;20100218&lt;/DTSTART&gt;
+&lt;URL&gt;https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev/Dynamiser-par-le-serveur-le&lt;/URL&gt;
+&lt;ATTENDEE&gt;Emmanuel.Saint-James@lip6.fr&lt;/ATTENDEE&gt;
+&lt;/VEVENT&gt;
+&lt;VEVENT&gt;
+&lt;DTSTART&gt;20100225&lt;/DTSTART&gt;
+&lt;URL&gt;https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev/Le-protocole-HTTP-et-ses-rejetons&lt;/URL&gt;
+&lt;ATTENDEE&gt;Emmanuel.Saint-James@lip6.fr&lt;/ATTENDEE&gt;
+&lt;/VEVENT&gt;
+&lt;VEVENT&gt;
+&lt;DTSTART&gt;20100304&lt;/DTSTART&gt;
+&lt;URL&gt;https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev/Les-protocoles-textuels-F-E-SM-HT&lt;/URL&gt;
+&lt;ATTENDEE&gt;Emmanuel.Saint-James@lip6.fr&lt;/ATTENDEE&gt;
+&lt;/VEVENT&gt;
+&lt;VEVENT&gt;
+&lt;DTSTART&gt;20100311&lt;/DTSTART&gt;
+&lt;URL&gt;https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev/Structurer-les-hyper-textes-XML&lt;/URL&gt;
+&lt;ATTENDEE&gt;Emmanuel.Saint-James@lip6.fr&lt;/ATTENDEE&gt;
+&lt;/VEVENT&gt;
+&lt;VEVENT&gt;
+&lt;DTSTART&gt;20100318&lt;/DTSTART&gt;
+&lt;URL&gt;https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev/Les-Feuilles-de-style-en-cascade&lt;/URL&gt;
+&lt;ATTENDEE&gt;Emmanuel.Saint-James@lip6.fr&lt;/ATTENDEE&gt;
+&lt;/VEVENT&gt;
+&lt;VEVENT&gt;
+&lt;DTSTART&gt;20100322&lt;/DTSTART&gt;
+&lt;DURATION&gt;P1D&lt;/DURATION&gt;
+&lt;URL&gt;https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev/Examen-partiel-du-lundi-22-Mars&lt;/URL&gt;
+&lt;/VEVENT&gt;
+&lt;VEVENT&gt;
+&lt;DTSTART&gt;20100325&lt;/DTSTART&gt;
+&lt;URL&gt;https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev/Les-types-MIME&lt;/URL&gt;
+&lt;ATTENDEE&gt;Nicolas.Labroche@lip6.fr&lt;/ATTENDEE&gt;
+&lt;/VEVENT&gt;
+&lt;VEVENT&gt;
+&lt;DTSTART&gt;20100401&lt;/DTSTART&gt;
+&lt;URL&gt;https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev/Dynamiser-par-le-client-JavaScript&lt;/URL&gt;
+&lt;ATTENDEE&gt;Emmanuel.Saint-James@lip6.fr&lt;/ATTENDEE&gt;
+&lt;/VEVENT&gt;
+&lt;VEVENT&gt;
+&lt;DTSTART&gt;20100408&lt;/DTSTART&gt;
+&lt;URL&gt;https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev/Abstraire-la-mise-en-pages-le-DOM&lt;/URL&gt;
+&lt;ATTENDEE&gt;Emmanuel.Saint-James@lip6.fr&lt;/ATTENDEE&gt;
+&lt;/VEVENT&gt;
+&lt;VEVENT&gt;
+&lt;DTSTART&gt;20100415&lt;/DTSTART&gt;
+&lt;URL&gt;https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev/Concurrence-et-securite-en&lt;/URL&gt;
+&lt;ATTENDEE&gt;Emmanuel.Saint-James@lip6.fr&lt;/ATTENDEE&gt;
+&lt;/VEVENT&gt;
+&lt;VEVENT&gt;
+&lt;DTSTART&gt;20100506&lt;/DTSTART&gt;
+&lt;URL&gt;https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev/Securiser-les-hyper-textes&lt;/URL&gt;
+&lt;ATTENDEE&gt;Emmanuel.Saint-James@lip6.fr&lt;/ATTENDEE&gt;
+&lt;/VEVENT&gt;
+&lt;VEVENT&gt;
+&lt;DTSTART&gt;20100520&lt;/DTSTART&gt;
+&lt;URL&gt;https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev/Servir-les-hyper-textes-Apache&lt;/URL&gt;
+&lt;ATTENDEE&gt;Emmanuel.Saint-James@lip6.fr&lt;/ATTENDEE&gt;
+&lt;/VEVENT&gt;
+&lt;VEVENT&gt;
+&lt;DTSTART&gt;20100609&lt;/DTSTART&gt;
+&lt;URL&gt;https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev/Examen-du-9-Juin-2010-SAX-the&lt;/URL&gt;
+&lt;/VEVENT&gt;
+&lt;VEVENT&gt;
+&lt;DTSTART&gt;20100625&lt;/DTSTART&gt;
+&lt;/VEVENT&gt;
+&lt;/VCALENDAR&gt;
+</pre></div>
+<div class="documents-joints">
+
+<a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev/spip.php?action=acceder_document&amp;arg=12837&amp;cle=9bf2ed62fc4995e9ce94163300247711c76bc4ba&amp;file=%2Fdistant%2FVCS%2FLI355%2FCC%2F2014-2015V%2F1%2Fpacs-ics.xml" type="application/xml" title="XML - - pacs-ics.xml"><img src="./index_files/xml-50a01-63c2f.png" style="height:52px;width:52px;" alt="" class="spip_logos" height="52" width="52"></a><br>pacs-ics.xml
+
+</div>
+
+
+
+<div style="text-align:right" id="s5595">
+Fichier à créer&nbsp;: <tt>evenements.php duree.php affiche.php calendrier.php formaffiche.php controler.js formcal.php saisircal.php formics.php</tt><br>
+</div>
+ 
+<div id="reponses56356">
+ 
+</div><br>
+</div><div id="pied" class="pied_page"><ul>
+<li><a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwww-licence.ufr-info-p6.jussieu.fr%2Flmd%2Flicence%2F2014%2Fue%2FLI355V-2015fev%2F%3Fpage%3Drubrique%26id_rubrique%3D4595%26id_auteur%3D3416987" rel="noindex nofollow" class="validation-css" title="vérifier la validité CSS 2.1">Valid CSS 2.1</a></li>
+<li><a href="http://validator.w3.org/check?uri=https%3A%2F%2Fwww-licence.ufr-info-p6.jussieu.fr%2Flmd%2Flicence%2F2014%2Fue%2FLI355V-2015fev%2F%3Fpage%3Drubrique%26id_rubrique%3D4595%26id_auteur%3D3416987" class="validation-xml" rel="noindex nofollow" title="vérifier la validité XHTML Baisc 1.1">Valid XHTML Basic 1.1</a></li>
+<li><a href="http://www.contentquality.com/?url=https%3A%2F%2Fwww-licence.ufr-info-p6.jussieu.fr%2Flmd%2Flicence%2F2014%2Fue%2FLI355V-2015fev%2F%3Fpage%3Drubrique%26id_rubrique%3D4595%26id_auteur%3D3416987&amp;rptmode=2" class="validation-wcag" title="vérifier la validité WCAG 2.0 AAA">Triple-A conformance Web Content Accessibility Guidelines 2.0</a></li>
+<li class="date-publi">
+Calculé le 25 février 2016 à 04h21min<br>
+par 
+<a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2014/ue/LI355V-2015fev/spip.php?page=auteur&amp;id_auteur=1&amp;sujet=Signaler%20un%20souci%20technique%20avec%20le%20site%20PACS%202014%202015" rel="noindex nofollow" title="Signaler un souci technique avec le site">DidacSPIP</a><br>
+Université Pierre et Marie Curie
+</li>
+<li><a href="http://validator.w3.org/mobile/check?docAddr=https%3A%2F%2Fwww-licence.ufr-info-p6.jussieu.fr%2Flmd%2Flicence%2F2014%2Fue%2FLI355V-2015fev%2F%3Fpage%3Drubrique%26id_rubrique%3D4595%26id_auteur%3D3416987" class="mobile-ok" rel="noindex nofollow" title="vérifier la validité Mobile OK">Mobile OK</a></li>
+<li><a href="http://www.spip.net/" class="reference-spip" title="Visiter SPIP">SPIP</a></li>
+</ul>
+<script type="text/javascript" src="./index_files/admin_check.js"></script>
+</div></div>
+
+</body></html>

@@ -1,0 +1,281 @@
+/*    Feuille de style specifique a l'impression */
+ 
+/* ecologique */
+
+/* * {color: black;} */
+
+/* Pour les liens, on vire. */
+
+a {font-style: oblique; text-decoration: none;}
+
+.dispose a:after {content:""; border: 0;}
+
+h1, h2,  ul {page-break-inside: avoid; page-break-after: avoid;}
+
+pre {
+color:#000;
+background:#fff;
+border: 1px solid #000;
+font-size:60%;
+}
+
+ul li, ol li {
+list-style-position: inside;
+padding: 0 0 0 0.5em;
+color:#000;
+}
+
+.chapo {
+	line-height: 1.4em;
+	margin-top: 1em;
+}
+.texte {
+}
+.ps {
+	padding-top: 0.6em;
+	margin-top: 0.6em;
+	border-top: 1px dashed #404040;
+}
+.notes {
+	margin-top: 0.6em;
+	margin-bottom: 0.6em;
+	border-top: 1px solid #707070;
+}
+.structure, .spip-admin-bloc, .spip-admin-boutons, .spip-previsu, .spip-admin-float, .documents-joints, .doc-joints{
+	display: none;
+}
+#envoi > div, #envoi > table { display: none;}
+
+.spip_code {text-align: left; display: block;}
+
+#content {
+	margin: 10px;
+}
+#content h1.titre-extrait {
+}
+#content h1.titre-texte {
+}
+#content .surtitre {
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+#content .detail {
+	margin-left: 2em;
+}
+div.slide.cover, div.slide h1, div.slide.cover h1, div.slide.cover li span {
+color:#000;
+background:#fff;
+}
+.extrait {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 2em;
+	margin-right: 0em;
+	line-height: 1.4em;
+}
+
+#content h1 {
+	border: 2px solid black;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 1.2em;
+	font-weight: bolder;
+}
+
+.page-sub-title {
+	margin: 0px;
+	font-weight: bolder;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 30px;
+	font-size: 15px;
+}
+
+/*
+ * Disposition : on elimine les elements de navigation (display: none)
+ * et on choisit un affichage de base pour le principal
+ */
+
+#content {
+  left: 1em;
+  top: 0;
+  width: auto;
+  border: 0;
+  margin: 0;
+  text-align: justify;
+  padding-right: 30px;
+}
+
+#navigation-upmc {display: none;}
+.pied_page {display: none;}
+.encart {display: none;}
+
+.cartouche {
+	margin-top: 0.5em;
+	padding-top: 1em;
+	margin-bottom: 1em;
+}
+
+.cartouche .spip_logos {
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-right: 0.8em;
+}
+
+.poste-le{
+	margin: 5px;
+	text-align: center;
+}
+
+/*
+ * Forums
+ */
+
+.forum-repondre {display: none;}
+.forum-repondre-message {display: none;}
+
+/* Encadrer solutions etc mais virer le lien de telechargement */
+
+.forum-total { list-style-type: none;}
+
+li.solution {border: 1px solid black; list-style-type: none;}
+
+/* Mettre des traits entre "solution", texte de la solution, bareme */
+/* margin-left deja a 5pt par le LI et eviter sur-impression du trait final */
+li.solution div {border-width: 0 0 1px 0;
+		 border-style: solid;
+		 margin: 0 5pt 2pt 0;
+}
+
+a.solution {display: none;}
+
+.reponse { 
+	border: 2px solid #000000;
+	padding: 2px;
+}
+.reponse div {margin: 1pt;}
+
+li.correction { 
+	list-style-type: none;
+	margin: 1pt;
+	padding: 1pt;
+	border: 2px dashed #000000;
+}
+li.correction > div {margin-left: 1pt; padding-left: 1pt;}
+
+/*
+ * Table des placements a l'examen
+ */
+
+.emarge {
+	display: block;
+}
+
+img.emarge {
+	display: inline;
+	height: 40px;
+}
+
+/* @page italienne { size: landscape; } */
+
+div.placement {
+/*	page:italienne; Opera le traite mal, les autres pas du tout ! */
+	page-break-before: always;
+}
+
+div.placement table caption {
+	margin-bottom: 20px;
+}
+
+/* Soutenances: comme a l ecran */
+
+ul.soutenances { border: 1px solid; padding: 1em;}
+ul.soutenances > li { list-style-type: none; }
+ul.soutenances > li > span+span { font-style: italic; float: right;}
+
+/* pour le diaporama */
+
+div.slide {
+    visibility: visible !important;
+    page-break-inside: avoid;
+    page-break-before:always;
+    padding:0;
+}
+div.slide h1 {
+	text-align: center; 
+	border: 1pt solid gray;
+	padding-left: 0.1em;
+	padding-right: 0.1em;
+	margin: 0;
+	height: 2.2em;
+	font-size: 120%;
+	line-height: 1.1em;
+}
+
+ul {
+  margin: 0.5em 1.5em 0em 1.5em;
+  padding: 0;
+}
+
+ol {
+  margin: 0.5em 1.5em 0em 1.5em;
+  padding: 0;
+}
+
+#header h1 {border: 2pt solid black; background-color: #CCC; text-align: center; display: block;}
+#footer div {display: none;}
+#footer h1, #footer h2, #footer h3 {text-align: center; font-style: italic; display: none;}
+
+.cours-unique > div+div > div {display: inline}
+.navigation-calendrier img, .calendrier-tel, .calendrier-abo, .modif-edt {display: none;}
+/* laisser tomber la liste des icones sur agenda */
+table.calendrier-salle td[rowspan] ul {display: none}
+table.calendrier-salle {border: 1px solid; margin: 1em;}
+table.calendrier-etroit {width: 100%;}
+table.calendrier-selection {width: 100%;}
+table.calendrier > caption {display: none;}
+table.calendrier th {width: 20%;padding: 0px; text-align: center; vertical-align: middle; font-weight: bold; }
+/* Rien le samedi et le dimanche. Gaffe a la table de 7 colonnes + 1 en rowspan */
+table.calendrier th+th+th+th+th+th {display:none }
+table.calendrier-selection th[rowspan]+th+th+th+th+th {display: inline-table }
+table.calendrier th[rowspan] {display: none;}
+table.calendrier td {width: 20%;padding: 0px; }
+table.calendrier td+td+td+td+td {border-right: 1px solid #AAA; }
+/* Rien le samedi et le dimanche dans cette table de 7 colonnes */
+table.calendrier td+td+td+td+td+td {display:none;}
+.calendrier-jour > span { position: absolute; margin-left: 2px; margin-right: 2px; border-top: 1px solid #CCC; font-weight: bold; }
+.calendrier-jour { position: relative; color: #999; border: 1px solid #AAA; border-right: 0;}
+.calendrier-evt {position: absolute; overflow: hidden; opacity: 1;}
+.bordure_right { border-right: 1px solid #AAA; }
+
+.calendrier-location {display: block;}
+.calendrier-attendee {border: 0 !important; }
+ /* style cinemat(yp)ographe */
+.calendrier-couleur1 { background: #FDE5F2; border: 1px solid #CD006F; color: #CD006F; } /* Fushia */
+.calendrier-couleur1i { background: #CD006F; border: 1px solid #FDE5F2; color: #FDE5F2; } /* Fushia */
+.calendrier-couleur2 { background: #EDF3FE; border: 1px solid #5da7c5; color: #5da7c5; } /* Bleu */
+.calendrier-couleur2i { background: #5da7c5; border: 1px solid #EDF3FE; color: #EDF3FE; } /* Bleu */
+.calendrier-couleur3 { background: #EBE9FF; border: 1px solid #766CF6; color: #766CF6; } /* Bleu pastel */
+.calendrier-couleur3i { background: #766CF6; border: 1px solid #EBE9FF; color: #EBE9FF; } /* Bleu pastel */
+.calendrier-couleur4 { background: #FEC; border: 1px solid #FA9A00; color: #FA9A00; } /* Orange */
+.calendrier-couleur4i { background: #FA9A00; border: 1px solid #FEC; color: #FEC; } /* Orange */
+.calendrier-couleur5 { background: #FFEDED; border: 1px solid #F00; color: #F00; } /* Rouge (Vermillon) */
+.calendrier-couleur5i { background: #F00; border: 1px solid #FFEDED; color: #FFEDED; } /* Rouge (Vermillon) */
+.calendrier-couleur6 { background: #FFF2EB; border: 1px solid #E95503; color: #E95503; } /* Orange */
+.calendrier-couleur6i { background: #E95503; border: 1px solid #FFF2EB; color: #FFF2EB; } /* Orange */
+.calendrier-couleur7 { background: #FFE; border: 1px solid #ccaa00; color: #ccaa00; } /* Jaune */
+.calendrier-couleur7i { background: #ccaa00; border: 1px solid #FFE; color: #FFE; } /* Jaune */
+.calendrier-couleur8 { background: #E2FDEC; border: 1px solid #009F3C; color: #009F3C; } /* Vert pastel */
+.calendrier-couleur8i { background: #009F3C; border: 1px solid #E2FDEC; color: #E2FDEC; } /* Vert pastel */
+.calendrier-couleur9 { background: #e5fd63; border: 1px solid #9DBA00; color: #9DBA00; } /* Vert */
+.calendrier-couleur9i { background: #9DBA00; border: 1px solid #e5fd63; color: #e5fd63; } /* Vert */
+.calendrier-couleur10 { background: #FFE0E0; border: 1px solid #640707; color: #640707; } /* Rouge (Bordeaux) */
+.calendrier-couleur10i { background: #640707; border: 1px solid #FFE0E0; color: #FFE0E0; } /* Rouge (Bordeaux) */
+.calendrier-couleur11 { background: #F2F2F2; border: 1px solid #3F3F3F; color: #3F3F3F; } /* Gris */
+.calendrier-couleur11i { background: #3F3F3F; border: 1px solid #F2F2F2; color: #F2F2F2; } /* Gris */
+.calendrier-couleur12 { background: #AAA; border: 1px solid #000; color: #000; }
+.calendrier-couleur12i { background: #000; border: 1px solid #AAA; color: #AAA; }
+.calendrier-couleur13 { background: #FFFFE0; border: 1px solid #666500; color: #666500; } /* Caca d'oie */
+.calendrier-couleur13i { background: #666500; border: 1px solid #FFFFE0; color: #FFFFE0; } /* Caca d'oie */
+.calendrier-couleur14 { background: #F5EEE5; border: 1px solid #8C6635; color: #8C6635; } /* Marron */
+.calendrier-couleur14i { background: #8C6635; border: 1px solid #F5EEE5; color: #F5EEE5; } /* Marron */

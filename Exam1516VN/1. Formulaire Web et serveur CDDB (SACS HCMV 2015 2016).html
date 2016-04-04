@@ -1,0 +1,456 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+<!-- saved from url=(0117)https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/Formulaire-Web-et-serveur-CDDB#forum581 -->
+<html xml:lang="fr" lang="fr" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="generator" content="SPIP 2.1.28">
+<meta name="language" content="fr">
+<meta name="description" content="SACS HCMV 2015 2016">
+<!-- alternative std du W3C refuse par l'outil de test d'un certain moteur
+  style type='text/css'>@viewport { width: device-width; zoom: 1;}</style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" media="screen, projection" href="./1. Formulaire Web et serveur CDDB (SACS HCMV 2015 2016)_files/spip.php">
+<link rel="stylesheet" type="text/css" media="print" href="./1. Formulaire Web et serveur CDDB (SACS HCMV 2015 2016)_files/impression.css">
+<link rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 480px)" href="./1. Formulaire Web et serveur CDDB (SACS HCMV 2015 2016)_files/handheld.css">
+<link rel="alternate" type="application/rss+xml" title="Syndiquer cette rubrique" href="http://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/spip.php?page=backend-breves&amp;id_rubrique=3&amp;titre=%2010/03/2016"><link rel="search" type="application/opensearchdescription+xml" href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/spip.php?page=opensearch.xml" title="SACS HCMV 2015 2016">
+
+ <link rel="prefetch" href="http://prefetch.validatorsearch.verisignlabs.com/">
+<title>1. Formulaire Web et serveur CDDB (SACS HCMV 2015 2016)</title>
+</head>
+<body class="default-parameters">
+<div id="navigation-upmc">
+	<div class="menu-lv1">
+		<a class="menu-logo" href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/ecrire/" title="Espace privé">Espace privé</a>
+	</div>
+	<div class="menu-lv1"><a href="http://www.upmc.fr/" title="Université Pierre et Marie Curie">UPMC</a></div>
+	<div class="menu-lv1 fs80"><a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct" title="Accueil du site">SACS HCMV 2015 2016</a></div>
+	<div class="menu-lv1">
+      <a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/WEB1" title="Structure des Architectures Clients-serveurs">WEB1</a>
+</div>
+
+
+<div class="menu-lv1">Navigation dans la page</div><ul class="menu-lv1">
+<li class="menu-lv2">
+    <a title="Exercice 1" href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/Formulaire-Web-et-serveur-CDDB#a1">Formulaire de base</a></li>
+<li class="menu-lv2">
+    <a title="Exercice 2" href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/Formulaire-Web-et-serveur-CDDB#a2">Détection Javascript des erreurs</a></li>
+<li class="menu-lv2">
+    <a title="Exercice 3" href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/Formulaire-Web-et-serveur-CDDB#a3">Styler les erreurs</a></li>
+<li class="menu-lv2">
+    <a title="Exercice 4" href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/Formulaire-Web-et-serveur-CDDB#a4">Détection PHP des erreurs</a></li>
+<li class="menu-lv2">
+    <a title="Exercice 5" href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/Formulaire-Web-et-serveur-CDDB#a5">Page Web complète</a></li>
+<li class="menu-lv2">
+    <a title="Exercice 6" href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/Formulaire-Web-et-serveur-CDDB#a6">Dialogue avec le serveur CDDB</a></li>
+<li class="menu-lv2">
+    <a title="Exercice 7" href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/Formulaire-Web-et-serveur-CDDB#a7">Une DTD pour CDDB</a></li>
+<li class="menu-lv2">
+    <a title="Exercice 8" href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/Formulaire-Web-et-serveur-CDDB#a8">Répondre en XML</a></li>
+</ul>
+
+
+<div class="menu-lv1">
+Authentifié sous<br>Mai Trung Hieu</div>	<div class="menu-lv1-last">&nbsp;</div>
+</div>
+<div id="content">
+
+<h1>Contrôles des Connaissances<br>1. Formulaire Web et serveur CDDB<br>examen 10/03/2016</h1>
+<h2 style="text-align: center; color: red">Mai Trung Hieu
+<script type="application/javascript">
+var note = 0;
+var derniere_modif = 1457600006;
+</script>
+<div>Dernière importation 10 mars 2016 à 09h53min</div>
+
+</h2><div style="color: red; font-style: italic; margin: 2em; text-align: justify">
+Vous utiliserez le lien à la fin de chaque question pour envoyer chacune de vos réponses. Par mesure de précaution, il vous est aussi demandé de les mettre dans le fichier de nom demandé, dans votre <tt>public_html</tt>.
+</div>
+
+<p>On souhaite proposer sous la forme d’un formulaire Web un service de consultation de bases de données accessibles par le protocole CDDB étudié au cours <a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/Les-protocoles-textuels-F-E-SM-HT" class="spip_in">Les protocoles  textuels (F|E?SM|HT)TP</a>. L’application à écrire sera donc à la fois un client d’un serveur CDDB auquel il faudra se connecter par une socket, et une composante du service fourni par le serveur HTTP habituel. L’ergonomie  du formulaire sera assurée par une  CSS activée à travers le DOM, et par des expressions rationnelles utilisées en JavaScript. Ces mêmes expressions seront  utilisées en PHP pour assurer la sécurité du service.</p>
+
+<p>Bien que l’examen soit conçu comme un tout, il est possible de répondre séparément à chaque question.</p>
+<div id="sequence169">
+<span id="e1295"></span>
+
+
+<h2 id="a1">1 Formulaire de base</h2>
+<p>Le formulaire Web à construire demandera la saisie de deux données&nbsp;:</p>
+
+<ul class="spip"><li> <tt>serveur</tt>, l’adresse du serveur CDDB&nbsp;;</li><li> <tt>disque</tt>, les spécifications du disque audio.</li></ul>
+<p>Dans cette question, il s’agit d’écrire une fonction retournant en résultat ce formulaire, autrement dit une chaîne composée d’une balise  HTML <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/html4/interact/forms.html#edef-FORM" class="spip_glossaire" title="Voir la description de &#39;form&#39; dans la documentation de &#39;html&#39;" rel="external">form</a> entourant deux balises HTML <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/html4/interact/forms.html#edef-INPUT" class="spip_glossaire" title="Voir la description de &#39;input&#39; dans la documentation de &#39;html&#39;" rel="external">input</a> avec chacune un libellé indiqué par une balise HTML <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/html4/interact/forms.html#edef-LABEL" class="spip_glossaire" title="Voir la description de &#39;label&#39; dans la documentation de &#39;html&#39;" rel="external">label</a>, et une balise permettant de soumettre le formulaire. La fonction reçoit en arguments&nbsp;:</p>
+
+<ol class="spip"><li> une valeur prédéfinie pour la saisie <tt>serveur</tt>&nbsp;;</li><li> une valeur prédéfinie pour la saisie <tt>disque</tt>&nbsp;;</li><li> un code JavaScript destiné à l’attribut HTML <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/html4/interact/scripts.html#adef-onsubmit" class="spip_glossaire" title="Voir la description de &#39;onsubmit&#39; dans la documentation de &#39;html&#39; section 1" rel="external">onsubmit</a> de la balise HTML <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/html4/interact/forms.html#edef-FORM" class="spip_glossaire" title="Voir la description de &#39;form&#39; dans la documentation de &#39;html&#39;" rel="external">form</a>.</li></ol>
+<p>Le troisième argument est optionnel, et de valeur par défaut la chaîne vide. Quand il est vide, l’attribut HTML <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/html4/interact/scripts.html#adef-onsubmit" class="spip_glossaire" title="Voir la description de &#39;onsubmit&#39; dans la documentation de &#39;html&#39; section 1" rel="external">onsubmit</a>  ne doit pas apparaître dans le formulaire.</p>
+
+<p>Ecrire la fonction <tt>formulaire_cddb</tt> réalisant ces spécifications. On remarquera qu’il ne s’agit pas pour le moment d’afficher une page HTML complète, seulement de construire et retourner en résultat une chaîne réduite au formulaire.</p>
+
+
+
+
+<div style="text-align:right" id="s1501013">
+Fichier à créer&nbsp;: <tt>formulaire.html.php</tt><br>
+</div>
+ 
+ 
+<div id="reponses1295">
+
+<ul class="forum-total">
+
+<li class="forum-fil" id="forum575"> 
+	    <div class="reponse">
+	<div class="forum-titre">Formulaire de base</div>
+10 mars 2016 à 09h50min, par  <a href="mailto:trung.mai@etu.upmc.fr">Mai Trung Hieu</a> 
+	<div><div class="spip_code"><code>&lt;?php<br>
+<br>
+function formulaire_cddb($serveur, $disque, $action = '')<br>
+{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; if ($action = null) {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $form = "&lt;form action='' method='post'&gt;&lt;fieldset&gt;\n" . <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "&lt;label&gt;Adresse du serveur CDDB&lt;/label&gt;" . <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "&lt;input id='_serveur' class='' type='text' name='" . $serveur . "' value=''&gt;\n" .<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "&lt;label&gt;Disque audio:&lt;/label&gt;" . <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "&lt;input id='_disque' class='' type='text' name='" . $disque . "' value=''\n&gt;" .<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "&lt;input type='button' name='btn_submit' value='Submit'&gt;" .<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "&lt;/fieldset&gt;&lt;/form&gt;";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; } else {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $form = "&lt;form onsubmit='" . $action . "' action='' method='post'&gt;&lt;fieldset&gt;\n" . <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "&lt;label&gt;Adresse du serveur CDDB&lt;/label&gt;" . <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "&lt;input id='_serveur' class='' type='text' name='" . $serveur . "' value=''&gt;\n" .<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "&lt;label&gt;Disque audio:&lt;/label&gt;" . <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "&lt;input id='_disque' class='' type='text' name='" . $disque . "' value=''\n&gt;" .<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "&lt;input type='button' name='btn_submit' value='Submit'&gt;" .<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "&lt;/fieldset&gt;&lt;/form&gt;";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; }<br>
+&nbsp; &nbsp; &nbsp; &nbsp; return $form;<br>
+}<br>
+?&gt;</code></div></div>
+
+	<div class="forum-repondre-message">
+		<a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/spip.php?page=ramassage&amp;id_article=1295&amp;id_rubrique=169&amp;id_forum=575&amp;retour=Formulaire-Web-et-serveur-CDDB">Améliorer votre réponse&nbsp;</a>
+	</div>
+	    </div>
+
+</li>
+
+</ul>
+
+</div><br><span id="e1296"></span>
+
+
+<h2 id="a2">2 Détection Javascript des erreurs</h2>
+<p>Les deux saisies doivent respecter les contraintes suivantes&nbsp;:</p>
+
+<ul class="spip"><li> l’adresse du serveur doit être une suite de caractères alpha-numériques, de soulignés et de traits d’union, avec également le signe "." mais jamais deux consécutifs ni final&nbsp;; de plus, cette suite peut être suivie par le signe ":" puis alors obligatoirement d’un ou plusieurs chiffres indiquant le numéro de port (exemples&nbsp;: <tt>cddb.org:8880, freedb.net</tt> etc)&nbsp;;</li><li> les spécifications du disque sont une suite de nombres entiers dont le premier chiffre n’est jamais 0, et sont séparés par des espaces.</li></ul>
+<p>Ecrire d’abord deux expressions rationnelles, que l’on affectera à deux variables JavaScript <tt>re_serveur</tt> et <tt>re_disque</tt>, effectuant les analyses ci-dessus.</p>
+
+<p>Ecrire ensuite une fonction JavaScript  <tt>controle_cddb</tt> recevant un argument censé être l’objet DOM <tt>form</tt> du formulaire écrit précédemment. La fonction applique les deux expressions rationnelles sur les deux saisies présentes dans le formulaire, affecte l’attribut HTML <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/html4/struct/global.html#adef-class" class="spip_glossaire" title="Voir la description de &#39;class&#39; dans la documentation de &#39;html&#39; section 1" rel="external">class</a> des balises de saisies à vide si le test est réussi, et à "<tt>erreur</tt>" s’il ne l’est pas. La fonction renvoie False si l’une au moins des saisies est fautive, True sinon.</p>
+
+
+
+
+<div style="text-align:right" id="s1501023">
+Fichier à créer&nbsp;: <tt>cddb.re.dom.js</tt><br>
+</div>
+ 
+ 
+<div id="reponses1296">
+
+<ul class="forum-total">
+
+<li class="forum-fil" id="forum547"> 
+	    <div class="reponse">
+	<div class="forum-titre">Détection Javascript des erreurs</div>
+10 mars 2016 à 09h01min, par  <a href="mailto:trung.mai@etu.upmc.fr">Mai Trung Hieu</a> 
+	<div><div class="spip_code"><code>var re_serveur = /^ *([a-z-_]+\.[a-z]+)(:[0-9]+)? *$/;<br>
+var re_disque = /^ *[1-9]+ *$/;<br>
+<br>
+function controle_cddb (form) {<br>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; var s1 = form.elements['_serveur'];<br>
+&nbsp; &nbsp; &nbsp; &nbsp; var s2 = form.elements['_disque'];<br>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; var test1 = re_serveur.test(s1.value);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; var test2 = re_disque.test(s2.value);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; <br>
+&nbsp; &nbsp; &nbsp; &nbsp; if (test1 &amp;&amp; test2) {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s1.class = '';<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s2.class = '';<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return true;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; } else{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s1.class = 'erreur';<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s2.class = 'erreur';<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return false;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; };<br>
+&nbsp; &nbsp; &nbsp; &nbsp; <br>
+}</code></div></div>
+
+	<div class="forum-repondre-message">
+		<a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/spip.php?page=ramassage&amp;id_article=1296&amp;id_rubrique=169&amp;id_forum=547&amp;retour=Formulaire-Web-et-serveur-CDDB">Améliorer votre réponse&nbsp;</a>
+	</div>
+	    </div>
+
+</li>
+
+</ul>
+
+</div><br><span id="e1297"></span>
+
+
+<h2 id="a3">3 Styler les erreurs</h2>
+<p>Ecrire une feuille de styles définissant la classe <tt>erreur</tt>. Cette classe a pour effet que la bordure de l’élément HTML concerné devra être une ligne en pointillés rouges de deux pixels d’épaisseur.</p>
+
+
+
+
+<div style="text-align:right" id="s1501033">
+Fichier à créer&nbsp;: <tt>cddb.css</tt><br>
+</div>
+ 
+ 
+<div id="reponses1297">
+
+<ul class="forum-total">
+
+<li class="forum-fil" id="forum527"> 
+	    <div class="reponse">
+	<div class="forum-titre">Styler les erreurs</div>
+10 mars 2016 à 08h15min, par  <a href="mailto:trung.mai@etu.upmc.fr">Mai Trung Hieu</a> 
+	<div><div class="spip_code"><code>.erreur {<br>
+border: 2px dashed red;<br>
+}</code></div></div>
+
+	<div class="forum-repondre-message">
+		<a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/spip.php?page=ramassage&amp;id_article=1297&amp;id_rubrique=169&amp;id_forum=527&amp;retour=Formulaire-Web-et-serveur-CDDB">Améliorer votre réponse&nbsp;</a>
+	</div>
+	    </div>
+
+</li>
+
+</ul>
+
+</div><br><span id="e1298"></span>
+
+
+<h2 id="a4">4 Détection PHP des erreurs</h2>
+<p>Ecrire deux constantes PHP <tt>RE_DISQUE</tt> et <tt>RE_SERVEUR</tt>
+ayant comme valeur les mêmes expressions rationnelles que celles définies en JavasScript précédemment. On veillera aux légères différences syntaxiques entre les deux langages. De plus, <tt>RE_SERVEUR</tt> doit comporter des parenthèses permettant d’isoler le serveur proprement dit et le numéro de port éventuel.</p>
+
+
+
+
+<div style="text-align:right" id="s1501043">
+Fichier à créer&nbsp;: <tt>cddb.re.php</tt><br>
+</div>
+ 
+ 
+<div id="reponses1298">
+
+<ul class="forum-total">
+
+<li class="forum-fil" id="forum535"> 
+	    <div class="reponse">
+	<div class="forum-titre">Détection PHP des erreurs</div>
+10 mars 2016 à 08h31min, par  <a href="mailto:trung.mai@etu.upmc.fr">Mai Trung Hieu</a> 
+	<div><div class="spip_code"><code>&lt;?php<br>
+define('RE_SERVEUR', '/^([a-z-_]+\.[a-z]+)(:[0-9]+)? $/');<br>
+define('RE_DISQUE', '/^ [1-9]+ $/');<br>
+<br>
+?&gt;</code></div></div>
+
+	<div class="forum-repondre-message">
+		<a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/spip.php?page=ramassage&amp;id_article=1298&amp;id_rubrique=169&amp;id_forum=535&amp;retour=Formulaire-Web-et-serveur-CDDB">Améliorer votre réponse&nbsp;</a>
+	</div>
+	    </div>
+
+</li>
+
+</ul>
+
+</div><br><span id="e1299"></span>
+
+
+<h2 id="a5">5 Page Web complète</h2>
+<p>Il s’agit à présent d’écrire un script PHP présentant le formulaire dans une page HTML complète.</p>
+
+<p>Si le script est appelé en méthode POST avec les deux saisies <tt>serveur</tt> et <tt>disque</tt> présentes et correctes, le script applique sur ces deux valeurs une fonction nommée <tt>service_cddb</tt> qui sera définie à la question suivante.</p>
+
+<p>Si les saisies sont absentes, c’est la première connexion au script et on présentera le formulaire sans valeur prédéfinie pour les balises HTML <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/html4/interact/forms.html#edef-INPUT" class="spip_glossaire" title="Voir la description de &#39;input&#39; dans la documentation de &#39;html&#39;" rel="external">input</a>. 
+Le titre de la page sera <tt>Service CDDB</tt>.</p>
+
+<p>Si les saisies sont présentes mais que l’une au moins est incorrecte, le formulaire est présenté avec les saisies comme valeurs prédéfinies. Le titre de la page sera comme ci-dessus, mais précédé du mot <tt>Erreur</tt>.</p>
+
+<p>Dans tous les cas, l’attribut HTML <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/html4/interact/scripts.html#adef-onsubmit" class="spip_glossaire" title="Voir la description de &#39;onsubmit&#39; dans la documentation de &#39;html&#39; section 1" rel="external">onsubmit</a> de la balise HTML <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/html4/interact/forms.html#edef-FORM" class="spip_glossaire" title="Voir la description de &#39;form&#39; dans la documentation de &#39;html&#39;" rel="external">form</a> devra appeler la fonction JavaScript  <tt>controle_cddb</tt> et refuser d’envoyer le formulaire si elle retourne False. La page Web devra également contenir de quoi charger le fichier JavaScript définissant fonction. Enfin, il ne faudra pas oublier de provoquer la chargement de la feuille de styles définie précédemment.</p>
+
+<p>On pourra utiliser les fonctions PHP <tt>entete</tt>, vue à la séance <a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/Selection-de-styles-et-types-de#a1" class="spip_in">Sélection de styles et types de média</a>, et <tt>saisie_fiable</tt>, vue à la séance <a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/Le-temps-du-formulaire#a3" class="spip_in">Le temps du formulaire</a>.</p>
+
+
+
+
+<div style="text-align:right" id="s1501053">
+Fichier à créer&nbsp;: <tt>soumission_cddb.php</tt><br>
+</div>
+ 
+ 
+<div id="reponses1299">
+
+<ul class="forum-total">
+
+<li class="forum-fil" id="forum581"> 
+	    <div class="reponse">
+	<div class="forum-titre">Page Web complète</div>
+10 mars 2016 à 09h53min, par  <a href="mailto:trung.mai@etu.upmc.fr">Mai Trung Hieu</a> 
+	<div><div class="spip_code"><code>&lt;?php<br>
+require_once 'cddb.re.php';<br>
+require_once 'entete.php';<br>
+require_once 'controleSaisies.php';<br>
+require_once 'cddb.re.dom.js';<br>
+require_once 'formulaire.html.php';<br>
+require_once 'service_cddb.php';<br>
+<br>
+$serveur = saisie_fiable($_POST, '_serveur', RE_SERVEUR);<br>
+$disque = saisie_fiable($_POST, '_disque', RE_DISQUE);<br>
+<br>
+$title = "Service CDDB";<br>
+<br>
+if (($serveur === TRUE) &amp;&amp; ($disque === TRUE)) {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; service_cddb($serveur, $disque);<br>
+} elseif (($serveur === FALSE) || ($disque === FALSE)) {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; $body = formulaire_cddb($serveur, $disque, 'controle_cddb()');<br>
+&nbsp; &nbsp; &nbsp; &nbsp; $title = "Erreur $title";<br>
+}else {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; $body = formulaire_cddb(null,null,'controle_cddb()');<br>
+}<br>
+<br>
+<br>
+echo entete($title), "&lt;body&gt;&lt;h1&gt;$title&lt;/h1&gt;\n", $body, "&lt;/body&gt;&lt;/html&gt;\n";<br>
+?&gt;</code></div></div>
+
+	<div class="forum-repondre-message">
+		<a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/spip.php?page=ramassage&amp;id_article=1299&amp;id_rubrique=169&amp;id_forum=581&amp;retour=Formulaire-Web-et-serveur-CDDB">Améliorer votre réponse&nbsp;</a>
+	</div>
+	    </div>
+
+</li>
+
+</ul>
+
+</div><br><span id="e1300"></span>
+
+
+<h2 id="a6">6 Dialogue avec le serveur CDDB</h2>
+<p>Un serveur CDDBP reconnait  en particulier la requête&nbsp;:</p>
+
+<p><tt>DISCID</tt> <i>n&nbsp;d<sub>1</sub>&nbsp;...&nbsp;d<sub>n</sub>&nbsp;d</i></p>
+
+<p>demandant quel est le disque de durée totale <i>d</i> composé de <i>n</i> morceaux de durée respective <i>d<sub>i</sub></i>.</p>
+
+<p>Un tel serveur peut répondre positivement à cette requête 
+de  2 manières&nbsp;;</p>
+
+<ul class="spip"><li> une ligne unique commençant par <tt>200</tt> et suivie d’un trio
+d’informations séparées par des espaces&nbsp;: <i>genre identifiant
+titre</i> (ll est précisé que le genre et l’identifiant ne
+comportent pas d’espaces)&nbsp;;</li><li> plusieurs lignes dont la dernière est réduite à un point et dont la
+première commence par <tt>211</tt>&nbsp;; ce cas signale des ambiguités, les
+lignes suivantes listant chacune un trio d’informations comme celui
+ci-dessus.</li></ul>
+<p>On considère que toute réponse ne commençant pas par <tt>200</tt> ou
+<tt>211</tt> signifie qu’il n’y a pas de disque correspondant.</p>
+
+<p>Ecrire
+la fonction PHP <tt>service_cddb</tt> qui&nbsp;:</p>
+
+<ul class="spip"><li> se connecte par <a href="http://www-ari.ufr-info-p6.jussieu.fr/OUTILS/documentation/doc/PHP/html/function.fsockopen.html" class="spip_glossaire" title="Voir la description de &#39;fsockopen&#39; dans la documentation de &#39;php&#39;" rel="external">fsockopen</a> au serveur indiqué par son premier argument, sur le port indiqué  (8880 par défaut)&nbsp;;</li><li> émet une requête <tt>DISCID</tt> dont les paramètres sont ceux présents dans le deuxième argument de la fonction&nbsp;;</li><li> envoie au client l’une de ces réponses selon les cas&nbsp;:<ul class="spip"><li> un code de retour 500 et un <tt>Content-Type</tt> de valeur <tt>text/plain</tt> avec un message indiquant que la connexion au serveur CDDB a échoué&nbsp;;</li><li> un code de retour 400 et un <tt>Content-Type</tt> de valeur <tt>text/plain</tt> si le serveur ne renvoie pas 200 ou 211&nbsp;;</li><li>  un code de retour 200 et un <tt>Content-Type</tt> de valeur <tt>application/xml</tt> autrement.</li></ul></li></ul>
+<p>Dans ce dernier cas, la fonction devra d’une part lire les réponses supplémentaires en cas de réponse 211, et d’autre part construire un tableau de toutes les réponses envoyées (donc une seule dans le cas du retour 200), chaque réponse étant un tableau des 3 informations indiquées ci-dessus. Cela fait, cette fonction applique sur ce tableau la fonction <tt>cddb_to_xml</tt>, chargée d’envoyer le corps de la réponse, et qui fait l’objet de la dernière question.</p>
+
+
+
+
+<div style="text-align:right" id="s1501063">
+Fichier à créer&nbsp;: <tt>service_cddb.php</tt><br>
+</div>
+ 
+ 
+<div id="reponses1300">
+ 
+
+<div class="forum-repondre">
+	<b><a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/spip.php?page=ramassage&amp;id_article=1300&amp;id_rubrique=169&amp;id_forum=&amp;retour=Formulaire-Web-et-serveur-CDDB#s1501063">Obtenir un formulaire de réponse à la question 6</a></b>
+</div>
+</div><br><span id="e1301"></span>
+
+
+<h2 id="a7">7 Une DTD pour CDDB</h2>
+<p>On se propose de présenter le résultat d’une requête CDDB <tt>DISCID</tt> sous la forme d’une suite de balises nommées <tt>cd</tt> dont le contenu est le titre du disque, et dont le genre et l’identifiant sont indiqués par des attributs XML nommé <tt>genre</tt> et <tt>id</tt>. Cette suite, réduite à 1 élément si la requête a envoyé le code de retour 200, est entourée de balises ouvrante et fermante nommées <tt>cddb</tt>.</p>
+
+<p>Donner une DTD pour un tel document XML.</p>
+
+
+
+
+<div style="text-align:right" id="s1501073">
+Fichier à créer&nbsp;: <tt>cddb.dtd</tt><br>
+</div>
+ 
+ 
+<div id="reponses1301">
+
+<ul class="forum-total">
+
+<li class="forum-fil" id="forum550"> 
+	    <div class="reponse">
+	<div class="forum-titre">Une DTD pour CDDB</div>
+10 mars 2016 à 09h11min, par  <a href="mailto:trung.mai@etu.upmc.fr">Mai Trung Hieu</a> 
+	<div><div class="spip_code"><code>&lt;!ELEMENT cddb &nbsp; &nbsp; &nbsp;(cd+)&gt;<br>
+&lt;!ELEMENT cd &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; (#PCDATA) &gt;<br>
+<br>
+&lt;!ATTLIST cd<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; genre &nbsp; &nbsp; &nbsp;CDATA &nbsp; #REQUIRED<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; id &nbsp; &nbsp; &nbsp; &nbsp; CDATA &nbsp; #REQUIRED&gt;</code></div></div>
+
+	<div class="forum-repondre-message">
+		<a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/spip.php?page=ramassage&amp;id_article=1301&amp;id_rubrique=169&amp;id_forum=550&amp;retour=Formulaire-Web-et-serveur-CDDB">Améliorer votre réponse&nbsp;</a>
+	</div>
+	    </div>
+
+</li>
+
+</ul>
+
+</div><br><span id="e1302"></span>
+
+
+<h2 id="a8">8 Répondre en XML</h2>
+<p>Ecrire la fonction <tt>cddb_to_xml</tt>, prenant en argument le tableau construit précédemment, et envoyant sur le flux de sortie un document XML conforme à cette DTD, et contenant la description des disques fournie par le tableau.</p>
+
+
+
+
+<div style="text-align:right" id="s1501083">
+Fichier à créer&nbsp;: <tt>cddb_to_xml.php</tt><br>
+</div>
+ 
+ 
+<div id="reponses1302">
+ 
+
+<div class="forum-repondre">
+	<b><a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/spip.php?page=ramassage&amp;id_article=1302&amp;id_rubrique=169&amp;id_forum=&amp;retour=Formulaire-Web-et-serveur-CDDB#s1501083">Obtenir un formulaire de réponse à la question 8</a></b>
+</div>
+</div><br>
+</div><div id="pied" class="pied_page"><ul>
+<li><a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww-licence.ufr-info-p6.jussieu.fr%2Flmd%2Flicence%2F2015%2Fue%2F3I016V-2015oct%2FFormulaire-Web-et-serveur-CDDB" rel="noindex nofollow" class="validation-css" title="vérifier la validité CSS 2.1">Valid CSS 2.1</a></li>
+<li><a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww-licence.ufr-info-p6.jussieu.fr%2Flmd%2Flicence%2F2015%2Fue%2F3I016V-2015oct%2FFormulaire-Web-et-serveur-CDDB" class="validation-xml" rel="noindex nofollow" title="vérifier la validité XHTML Baisc 1.1">Valid XHTML Basic 1.1</a></li>
+<li><a href="http://www.contentquality.com/?url=http%3A%2F%2Fwww-licence.ufr-info-p6.jussieu.fr%2Flmd%2Flicence%2F2015%2Fue%2F3I016V-2015oct%2FFormulaire-Web-et-serveur-CDDB&amp;rptmode=2" class="validation-wcag" title="vérifier la validité WCAG 2.0 AAA">Triple-A conformance Web Content Accessibility Guidelines 2.0</a></li>
+<li class="date-publi">
+Calculé le 10 mars 2016 à 07h01min<br>
+par 
+<a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016V-2015oct/spip.php?page=auteur&amp;id_auteur=1&amp;sujet=Signaler%20un%20souci%20technique%20avec%20le%20site%20SACS%20HCMV%202015%202016" rel="noindex nofollow" title="Signaler un souci technique avec le site">DidacSPIP</a><br>
+Université Pierre et Marie Curie
+</li>
+<li><a href="http://validator.w3.org/mobile/check?docAddr=http%3A%2F%2Fwww-licence.ufr-info-p6.jussieu.fr%2Flmd%2Flicence%2F2015%2Fue%2F3I016V-2015oct%2FFormulaire-Web-et-serveur-CDDB" class="mobile-ok" rel="noindex nofollow" title="vérifier la validité Mobile OK">Mobile OK</a></li>
+<li><a href="http://www.spip.net/" class="reference-spip" title="Visiter SPIP">SPIP</a></li>
+</ul>
+<script type="text/javascript" src="./1. Formulaire Web et serveur CDDB (SACS HCMV 2015 2016)_files/admin_check.js"></script>
+</div></div>
+
+</body></html>

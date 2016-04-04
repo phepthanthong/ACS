@@ -1,0 +1,40 @@
+
+.billet {
+	border: 2px solid blue;
+	font-weight:bold;
+}
+
+.billet>span{
+	font-style:italic;
+}
+
+.billet>span+span{
+	padding-left:2em;
+	font-style:normal;
+	cursor:pointer;
+}
+
+.billet span+span+span {
+	float:right;
+}
+
+.billet>div>div{
+	background-color:#CCCCCC;
+	font-weight:normal;
+}
+
+.billet>div>div>span {
+	cursor:normal;
+}
+
+.billet>div>div>span {
+	cursor:normal;
+}
+
+.billet>div>div>span:first-child {
+	font-style:italic;
+}
+
+.billet>div {
+	display:none;
+}

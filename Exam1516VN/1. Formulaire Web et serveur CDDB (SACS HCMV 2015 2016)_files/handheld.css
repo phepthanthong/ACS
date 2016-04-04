@@ -1,0 +1,99 @@
+/* Feuille de style pour media "handheld" (= telephones mobiles) */
+
+#navigation-upmc
+{
+	position: relative;
+	width: inherit;
+	padding: 1em;
+	margin: 1em;
+}
+
+/* Pas de lien vers l'espace prive, ca sert peu (passer par l'url sinon) */
+
+#navigation-upmc > div:first-child {display: none}
+
+#content {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: inherit;
+	padding: 1em;
+	margin: 1em;
+}
+
+/* Neutraliser les logos SPIP & W3C en bas de page */
+
+.validation-xml, .validation-css, .validation-wcag {
+	float: left; 
+	font-size: 0.7em; 
+	background: inherit;
+	padding: 0;
+}
+
+.reference-spip, .mobile-ok {
+	float: right; 
+	font-size: 0.7em; 
+	background: inherit;
+	padding: 0;
+}
+
+/* pas d'acces au modifieur d'emploi du temps */
+
+.modif-edt {
+	display: none;
+}
+
+/* Neutraliser le logo OpenSearch */
+
+#formulaire_recherche a {
+	font-size: 0.7em; 
+	background: inherit;
+	padding: 0;
+}
+
+/* Neutraliser les logos (deja fait pour menu a gauche, y en d'autres ?) */
+
+.menu-logo {
+  font-size:  inherit;
+  background: inherit;
+  margin-left: 2px;
+  display: block;
+}
+
+/* bandeau de navigation: pas de gaspillage vertical */
+
+li.menu-lv2 {
+	display: inline;
+	background: #fff;
+	border: 0;
+	font-size: 1.5em;
+	margin-right: 1em;
+}
+
+/* table en colonne, et sans bandeau de navigation */
+
+table.calendrier-etroit { width: 100%}
+table.calendrier-large { width: 100%}
+
+table.sommaire tr { display: block; }
+table.sommaire th { display: none; }
+table.sommaire td { width: 100%; display: block; }
+
+table.calendrier caption {display: none}
+table.calendrier th {display: none}
+table.calendrier td { border-left: 1px solid; display: block;clear: both;height: auto;}
+
+table.calendrier-salle th { display: none;}
+table.calendrier-salle td { border: 0; display: block; width: 100%;  }
+table.calendrier-salle td[rowspan] { display: none;} 
+table.calendrier-salle td+td[rowspan] { display: none;}
+table.calendrier-salle td+td+td[rowspan] { display: block; width: 100%}
+table.calendrier-salle td+td+td+td[rowspan] { display: block; width: 100%}
+
+div.cours-unique > div { display: none; }
+div.cours-unique > div+div { display: block; }
+div.cours-unique > div+div+div { display: none; }
+
+/* Diaporama (a finir) */
+
+#controls {margin: 2em; padding: 2em; }
